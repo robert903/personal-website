@@ -1,4 +1,5 @@
 .footer {
+  z-index: 9999999;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
@@ -12,14 +13,7 @@
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
 
-  .footer-logo {
-    margin-bottom: 2em;
-    text-align: center;
-
-    img {
-      height: 3em;
-    }
-  } 
+ 
 
   .footer-links {
     @include clearfix;
@@ -83,6 +77,9 @@
     text-align: center;
   }
 }
+
+
+
 .maxslob{
-  color: white;
+  color: darken(lightblue, 20%);
 }

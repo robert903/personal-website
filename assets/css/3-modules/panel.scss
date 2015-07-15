@@ -10,11 +10,11 @@
   $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
   @include position(fixed, 0px auto 0px 0px);
-  @include size(260px 100%);
-  @include transform(translateX(-260px));
+  @include size(290px 100%);
+  @include transform(translateX(-290px));
   @include transition(all 0.25s linear);
   background: $sliding-panel-background;
-  z-index: 999999;
+  z-index: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
@@ -32,7 +32,7 @@
     color: $sliding-panel-color;
     display: block;
     font-weight: bold;
-    padding: 1em;
+    padding: 2em;
     text-decoration: none;
 
     &:focus {
@@ -56,7 +56,7 @@
   background: black;
   opacity: 0;
   visibility: hidden;
-  z-index: 999998;
+  z-index: 1;
 
   &.is-visible {
     opacity: 0.4;
@@ -71,3 +71,17 @@
     height: 1.3em;
   }
 }
+.slider-close{
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 0px 0px 2px gray
+}
+.sliding-panel-content::-webkit-scrollbar{
+    width: 1em;
+}
+.sliding-panel-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+ 
+.sliding-panel-content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;}

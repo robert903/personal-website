@@ -24,24 +24,14 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  text-align: center;
+
 
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
     position: relative;
-    z-index: 9999;
-  }
-
-  .logo {
-    float: left;
-    max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
-
-    img {
-      max-height: $navigation-height;
-      padding: 0.8em 0;
-    }
+    //z-index: 9999;
   }
 
   
@@ -71,9 +61,12 @@ header.navigation {
 // Nav menu
 
   nav {
-    float: none;
+    //position: relative;
+    //left: 30%;
+    margin-left: 29%;
+    float: middle;
     min-height: $navigation-height;
-    z-index: 9999999;
+    //z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
       float: left;
@@ -89,7 +82,9 @@ header.navigation {
     overflow: visible;
     padding: 0;
     width: 100%;
-    z-index: 9999;
+    //z-index: 9999;
+    
+    
 
     &.show {
       display: block;
@@ -113,7 +108,9 @@ header.navigation {
     padding-right: 0.8em;
     text-align: right;
     width: 100%;
-    z-index: 9999;
+    //z-index: 9999;
+
+
 
     @include media ($horizontal-bar-mode) {
       background: transparent;

@@ -1,94 +1,77 @@
-@mixin grid-item-columns($columns) {
-  width: (100% / 12) * $columns;
-}
+.bullets {
+  $base-line-height: 1.5em !default;
+  $action-color: black !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $icon-bullet-size: 3.5em;
 
-.grid-items {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-bottom: $base-line-height;
+  margin: 1em;
+  overflow: auto;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-  $action-color: #477DCA !default;
-  $base-background-color: white !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $grid-item-border-size: 9px;
-  $grid-item-columns: 4;
-  $grid-item-big-columns: 8;
-  $grid-item-color: white;
-  $grid-item-height: 14em;
-  $grid-item-background: white;
+  .bullet {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+  }
 
-  @include clearfix;
-    
-  .grid-item {
-    @include transition (all 0.2s ease-in-out);
-    border-bottom: $grid-item-border-size solid  $grid-item-background;
-    border-left: ($grid-item-border-size / 2) solid  $grid-item-background;
-    border-right: ($grid-item-border-size / 2) solid  $grid-item-background;
-    border-top: 0;
-    cursor: pointer;
+  .bullet-icon {
+    background: $action-color;
+    border-radius: 50%;
     float: left;
-    height: $grid-item-height;
-    overflow: hidden;
-    outline: none;
-    padding: 2em;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-    }
-
-.grid-item:focus,
-.grid-item:hover {
-           background: url("http://www.bing.com/az/hprichbg/rb/SabiSandsLion_ROW10452128184_1920x1080.jpg");
-           opacity: .1;  
-          background-repeat: no-repeat;
-          background-position: top;
-          background-size: cover;
-        }}
-      
-
-  .grid-item img {
-      display: block;
-      height: 3em;
-      margin-bottom: 1em;
-      margin: auto;
-    }
-
-  .grid-item h1 {
-      color: $grid-item-color;
-      font-size: 1.3em;
-      margin-bottom: 0.4em;
-    }
-
-  .grid-item p {
-      line-height: 1.5em;
-      margin: auto;
-      color: transparentize($grid-item-color, 0.3);
-      
-      @include media($medium-screen) {
-        max-width: 70%;
-      }
-    }
-
-  .grid-item-big {
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
-    }
-    p {
-      @include media($medium-screen) {
-        max-width: 60%;
-      }  
-    }
+    height: $icon-bullet-size;
+    padding: $icon-bullet-size / 4;
+    width: $icon-bullet-size;
   }
 
-  .grid-item-image {
-    background: url("http://www.bing.com/az/hprichbg/rb/SabiSandsLion_ROW10452128184_1920x1080.jpg");
-    background-color: $grid-item-background;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .88;
+  .bullet-icon-1 {
+    //background: lighten(black,20%);
+    background:#FF4136 ;
   }
+
+  .bullet-icon-2 {
+    //background: lighten(black,25%);
+    background:#0074D9 ;
+  }
+
+  .bullet-icon-3 {
+    //background: lighten(black,30%);
+    background:#2ECC40 ;
+  }
+
+  .bullet-content {
+    margin-left: $icon-bullet-size * 1.4;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    border-bottom: 1px solid transparentize($base-font-color, 0.8);
+    display: inline-block;
+    font-size: $icon-bullet-size / 2.5;
+    margin: 0 0 ($icon-bullet-size / 6) 0;
+    padding-top: $icon-bullet-size / 7;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+.number{
+  font-size: 30px;
+  font-height: bold;
+  text-align: center;
+  color: white;
 }
