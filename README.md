@@ -1,1 +1,1 @@
-# responsive-page
+# responsive personal website
