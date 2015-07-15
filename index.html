@@ -21,8 +21,8 @@
       <ul id="js-navigation-menu" class="navigation-menu show">
         <li class="nav-link"><a href="javascript:void(0)">Blog(soon)</a></li>
         <li class="nav-link"><a href="javascript:void(0)">Knowledge(soon)</a></li>
-        <li class="nav-link sliding-panel-button"><a href="javascript:void(0)">About Me</a></li>
-        <li class="nav-link "><a id="demo01" href="#animatedModal">Contact</a></li>
+        <li class="nav-link sliding-panel-button"><a href="">About Me</a></li>
+        <li class="nav-link sliding-panel-button1"><a href="">Contact</a></li>
         
 
         <!-- SUBMENUS
@@ -103,7 +103,7 @@
       <li><a href="javascript:void(0)">Blog(soon)</a></li>
       <li><a class="sliding-panel-button" href="javascript:void(0)">About Me</a></li>
       <li><a href="javascript:void(0)">Knowledge(soon)</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a class="sliding-panel-button1" href="javascript:void(0)">Contact</a></li>
     </ul>
     <ul>
       <li><h3>Links</h3></li>
@@ -126,11 +126,39 @@
 </div>
 
 
+<nav class="js-menu1 sliding-panel-content1">
+  <ul>
+    <li class="">
+      <div class="contact1">
+        <span>Here is a few ways to contact me:</span>
+      </div>
+    </li>
+    <li class="email-item">
+    <div class="email-cntnr">
+      <div class="email"></div>
+        <div class="cntc-info">
+          <span class="cntc-inf">By e-mail:</span><br>
+          <span class="cntc-em"><a href="mailto:maxik2212@gmail.com">maxik2212@gmail.com</a></span>
+      </div>
+    </div>
+    </li>
+    <li class="vk-item">
+    <div class="vk-cntnr">
+      <div class="vk"></div>
+        <div class="cntc-info">
+          <span class="cntc-inf">By vk:</span><br>
+          <span class="cntc-em"><a href="http://vk.com/slobmax" target="blank">vk.com/slobmax</a></span>
+      </div>
+    </div>
+    </li>
+    <li class="slider-close1"><a class="sliding-panel-button1">Close</a></li>
+  </ul>
+  <span id="name1">Made by MaxSlob</span>
+</nav>
+
+
 
 <nav class="js-menu sliding-panel-content">
-    <div class="Item1"></div>
-    <div class="Item2"></div>
-    <div class="Item3"></div>
   <ul>
     <li class="Item1">
       <div class="crc-cntnr">
@@ -154,68 +182,9 @@
   </ul>
   <span id="name1">Made by MaxSlob</span>
 </nav>
- 
-   
-    <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            <button type="x" class="close-modal-btn">CLOSE</button>
-        </div>
-            
-        <div class="modal-content">
-          <script language="javascript">var sa_email_id = '56290-a1d67';var sa_sent_text = 'Thank you for contacting me.';</script>
-<script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
-<div id="sa_contactdiv">
-Or contact directly - maxik2212@gmail.com
-<form name=sa_htmlform style="margin:0px" onsubmit="return sa_contactform()">
-<table>
-<tr><td>Name: <span style="color:#D70000">*</span><br><input type="text" name="name" required="true" /></td></tr>
-<tr><td>E-mail Address:<br><input type="text" name="email" /></td></tr>
-<tr><td>Subject: <span style="color:#D70000">*</span><br><input type="text" name="subject" required="true" /></td></tr>
-<tr><td>Message: <span style="color:#D70000">*</span><br><textarea name="message" cols="42" rows="9" required="true"></textarea></td></tr>
-<tr><td id="cntct"><input  type="submit" value="Send Message" style="font-weight:bold"></td></tr>
-</table>
-</form>
 
-</div>
-
- </div>
-    </div>
-
-       
-<script src="animatedModal.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="assets/js/jquery-2.1.4.min.js"></script>-->
-<script src="animatedModal.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
-<script>
-
-            //demo 01
-            $("#demo01").animatedModal();
-
-            //demo 02
-            $("#demo02").animatedModal({
-                modalTarget:'modal-02',
-                animatedIn:'lightSpeedIn',
-                animatedOut:'bounceOutDown',
-                color:'#3498db',
-                // Callbacks
-                beforeOpen: function() {
-                    console.log("The animation was called");
-                },           
-                afterOpen: function() {
-                    console.log("The animation is completed");
-                }, 
-                beforeClose: function() {
-                    console.log("The animation was called");
-                }, 
-                afterClose: function() {
-                    console.log("The animation is completed");
-                }
-            });
-
-        </script>
 
 </body>
 </html>
