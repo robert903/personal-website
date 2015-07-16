@@ -75,3 +75,11 @@
   text-align: center;
   color: white;
 }
+.js-fade-element-hide {
+  opacity: 0;
+}
+
+.js-fade-element-show {
+  @include transition (all 0.4s ease-in-out);
+  opacity: 1;
+}
