@@ -114,4 +114,58 @@ p
       text-decoration: underline
 
 //----------------------( PANEL END )----------------------//
-  
+main 
+  position: absolute
+  top: 70px
+  height: inherit
+  width: inherit
+  color: white
+  margin: 0 auto
+     
+  section
+    width: inherit
+    height: inherit
+    margin: 0 auto
+    
+    article
+      margin-left: 15px
+      
+
+      @include media($medium-screen)
+        margin-left: auto
+        margin-right: auto
+
+        ul, p
+          margin-left: 35px
+
+      
+      @include media($large-screen)
+        @include span-columns(4.1)
+        @include omega(2n)
+        @include clearfix
+        margin-left: auto
+        margin-right: auto
+
+      header
+        text-align: center
+        font-weight: 700
+        font-size: 1.1em
+        text-decoration: underline
+    
+
+.bg-cntr
+  height: 31em
+  width:100%
+
+.bg
+  position: relative
+  width: inherit
+  height: inherit
+  margin: 0
+  padding: 0
+  background: url(http://i.imgur.com/iloGlhZ.jpg) no-repeat
+  background-size: cover
+  background-attachment: fixed
+  opacity: .8
+
+ 
