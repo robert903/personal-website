@@ -9,7 +9,6 @@
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
-  
   background: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
@@ -78,6 +77,7 @@
     text-align: center;
   }
 }
+
 
 
 .maxslob{
