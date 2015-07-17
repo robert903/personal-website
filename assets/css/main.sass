@@ -80,6 +80,7 @@ p
   justify-content: center
   align-items: center
 
+
 .circ-panel
   background: url(https://pp.vk.me/c625827/v625827378/1da3/sTzZI3UAab8.jpg) 0% 0% no-repeat
   background-size: cover
@@ -87,6 +88,7 @@ p
   height: 80px
   border-radius: 40px
   margin-top: 30px
+
   
   
 
@@ -118,7 +120,6 @@ main
   height: inherit
   width: inherit
   margin: 0 auto
-
      
   section
     width: inherit
@@ -133,24 +134,36 @@ main
     article    
 
       li
+        position: relative
+        top: 20px
         background-color: rgba(255,255,255,0.9) 
-        margin: 0 25px
+        margin: 0 auto
         border-radius: 5px
         margin-top: 7px
         text-align: center
-        padding: 3px
+        padding: 7px
         color: black
-        
+        transition-property: all
+        transition-duration: 0.20s
+        transition-timing-function: linear
+        font-size: 20px
+        max-width: 70%
 
         @include media($large-screen)
           padding: 10px
+          min-width: 60%
+          max-width: 70%
 
         @include media($medium-screen)
-          padding: 6px
+          padding: 8px
+          //margin: 0 2em
+          margin-top: 5px
+          max-width: 85%
 
-      li:hover
-        background-color: rgba(0,0,0,0.7) 
-        color: white
+        li:hover, li:active, li:focus
+          background-color: rgba(0,0,0,0.7) 
+          color: white
+
 
       @include media($medium-screen)
         margin-left: auto
@@ -168,12 +181,13 @@ main
         font-weight: 700
         font-size: 1.1em
         text-decoration: underline
-        background-color: white
-        color: black
-        border-radius: 40px
+        background-color: rgba(0,0,0,0.9) 
+        color: white
+        border-radius: 3px
         line-height: 1.3em
-        padding: 5px
-        margin-top: 25px
+        padding: 20px
+        position: relative
+        top: 20px
 
         
         @include media($medium-screen)
@@ -182,14 +196,25 @@ main
         @include media($large-screen)
           padding: 15px
           margin-bottom: 10px
+
+      header:nth-child(2)
+        margin-top: 25px
+
+      header:nth-child(3)
+        margin-top: 25px
     
+.li-last
+  margin-bottom: 55px
 
 .bg-cntr
-  height: 80.9em
+  height: 115.9em
   width:100%
 
   @include media($medium-screen)
-    height: 42.9em
+    height: 53.5em
+
+  @include media($large-screen)
+    height: 49.9em
 
 .bg
   position: relative
@@ -197,7 +222,7 @@ main
   height: inherit
   margin: 0
   padding: 0
-  background: url(http://i.imgur.com/iloGlhZ.jpg) no-repeat
+  background: url(http://i.imgur.com/dZVV8Bu.jpg) no-repeat
   background-size: cover
   background-attachment: fixed
   opacity: .8

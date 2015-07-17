@@ -3,7 +3,7 @@
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $hero-color: white;
-  $hero-image: '/assets/img/bg.jpg';
+  $hero-image: 'http://i.imgur.com/y530wJO.jpg';
   opacity: .95;
 
   @include background(url($hero-image));
@@ -24,8 +24,10 @@
 
     .hero-copy {
       text-align: center;
+
       
       h1 {
+        background-color: rgba(255,255,255,0.5);
         font-size: 1.6em;
         margin-top: 4em;
         margin-bottom: 0.5em;
@@ -36,6 +38,7 @@
       }
 
       article {
+        background-color: rgba(0,0,0,0.5);
         font-weight: 300;
         line-height: 1.4em;
         margin: 0 auto 3em auto; 
