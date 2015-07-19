@@ -24,6 +24,8 @@
 
     .hero-copy {
       text-align: center;
+      width: 100%;
+      
 
       
       h1 {
@@ -31,9 +33,12 @@
         font-size: 1.6em;
         margin-top: 4em;
         margin-bottom: 0.5em;
+        margin-right: auto;
+        margin-left: auto;
 
         @include media($large-screen) {
           font-size: 1.8em;
+          width: 45%;
         }
       }
 
