@@ -95,6 +95,7 @@ p
       text-decoration: underline
 
 //----------------------( PANEL END )----------------------//
+
 main 
   height: inherit
   width: inherit
@@ -104,106 +105,124 @@ main
     width: inherit
     height: inherit
     margin: 0 auto
-    
-    @include media($medium-screen)
-      display: flex
-      justify-content: center
-    //align-items: center
-    
-    article    
 
+    ul
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      flex-direction: center
+    
       li
         position: relative
+        text-align:center
         top: 20px
         background-color: rgba(255,255,255,0.9) 
         margin: 0 auto
-        border-radius: 5px
-        margin-top: 7px
+        margin-top: 20px
+        margin-bottom: 10px
         text-align: center
-        padding: 7px
+        padding: 30px
         color: black
         transition-property: all
         transition-duration: 0.20s
         transition-timing-function: linear
         font-size: 20px
-        max-width: 70%
+        box-shadow: 0 0 50px black
+        max-width: 85%
+        transform: rotate3d(0, 0, 1, 360deg)
 
-        @include media($large-screen)
-          padding: 10px
-          min-width: 60%
-          max-width: 70%
+        span 
+          background-color: rgba(255,255,255,0.5)
+          color: white
+          display: inline-block
+          position: relative
+          bottom: 10px
+          width: 100%
 
         @include media($medium-screen)
-          padding: 8px
-          //margin: 0 2em
-          margin-top: 5px
-          max-width: 85%
+          max-width: 45%
+
+        @include media($large-screen)
+          max-width: 30%
+
+
+
+        a
+          color: white
+          font-weight: 500
+          margin: 0
+          padding: 0
+
+        a:hover
+          color: $red
+
+      li:nth-child(3n+1)
+        background-color: rgba(0,117,159,0.9)
+
+      li:nth-child(3n+2)
+        background-color: rgba(255,117,159,0.9)
+
+      li:nth-child(3n+3)
+        background-color: darken(rgba(150,255,0,0.9),10%)
+
 
       li:hover, li:active, li:focus
-        background-color: rgba(0,0,0,0.7) 
+        background-color: rgba(0,0,0,0.8) 
         color: white
 
+        a
+          color: $blue + 100
 
-      @include media($medium-screen)
-        margin-left: auto
-        margin-right: auto
-
-      @include media($large-screen)
-        @include span-columns(4.1)
-        @include omega(2n)
-        @include clearfix
-        margin-left: auto
-        margin-right: auto
-
-      header
-        text-align: center
-        font-weight: 700
-        font-size: 1.1em
-        text-decoration: underline
-        background-color: rgba(0,0,0,0.9) 
-        color: white
-        border-radius: 3px
-        line-height: 1.3em
-        padding: 20px
-        position: relative
-        top: 20px
+        a:hover
+          color: $red + 10
 
         
-        @include media($medium-screen)
-          margin-bottom: 10px
+    header
+      text-align: center
+      font-weight: 700
+      font-size: 1.3em
+      text-decoration: underline
+      background-color: rgba(0,0,0,0.9) 
+      color: white
+      border-radius: 3px
+      line-height: 1.3em
+      padding: 20px
+      position: relative
+      top: 20px
 
-        @include media($large-screen)
-          padding: 15px
-          margin-bottom: 10px
+      
+      @include media($medium-screen)
+        margin-bottom: 10px
 
-      header:nth-child(2)
-        margin-top: 25px
+      @include media($large-screen)
+        padding: 15px
+        margin-bottom: 10px
 
-      header:nth-child(3)
-        margin-top: 25px
-    
 .li-last
   margin-bottom: 55px
 
-.bg-cntr
-  height: 115.9em
-  width:100%
-
-  @include media($medium-screen)
-    height: 53.5em
-
-  @include media($large-screen)
-    height: 49.9em
-
 .bg
   position: relative
-  width: inherit
-  height: inherit
-  margin: 0
-  padding: 0
-  background: url(http://i.imgur.com/dZVV8Bu.jpg) no-repeat
-  background-size: cover
+  width: 100%
+  height: 100%
+  background: url(http://i.imgur.com/zKRkFHK.jpg) no-repeat
+  background-size: 100% 100%
   background-attachment: fixed
-  opacity: .8
+  background-origin: padding-box
+  opacity: .9
 
- 
+  @include media($large-screen)
+    background-size: cover
+
+li
+  text 
+    display: none
+
+li:hover text
+  
+  display: inline
+  
+
+  
+
+  
