@@ -10,6 +10,7 @@
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   padding-bottom: 5.5em;
 
@@ -55,4 +56,21 @@
       }
     }
   }
+}
+
+.hero-second { 
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-color: white;
+  $hero-image-sec: 'http://i.imgur.com/cBWPjmp.jpg';
+  opacity: .95;
+
+  @include background(url($hero-image-sec));
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 5.5em;
 }

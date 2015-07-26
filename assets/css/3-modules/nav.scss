@@ -1,7 +1,7 @@
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
+  $action-color: white !default;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
@@ -64,8 +64,10 @@ header.navigation {
   nav {
     //position: relative;
     //left: 30%;
-    margin-left: 29%;
-    float: middle;
+    width: 100%;
+    text-align: center;
+    //margin-left: 29%;
+    //float: middle;
     min-height: $navigation-height;
     //z-index: 9999999;
 
