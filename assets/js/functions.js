@@ -41,6 +41,21 @@ $('.sliding-panel-button1,.sliding-panel-fade-screen1,.sliding-panel-close1').on
     }
   });
 
+  var isClicked = true;
+
+$('#js-mobile-menu').on('click', function(){
+  if(isClicked){
+    $(this).css('background', '');
+    $(this).addClass('js-mobile-menu-clicked');
+    isClicked = false;
+    }else{
+      $(this).removeClass('js-mobile-menu-clicked');
+      $(this).css('background', 'url(http://imgh.us/1438443780_menu-alt.svg) no-repeat');
+      isClicked = true;
+      }
+  });
+
+
 
 });
 

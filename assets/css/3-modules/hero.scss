@@ -31,14 +31,18 @@
       
       h1 {
         background-color: rgba(255,255,255,0.5);
-        font-size: 1.6em;
+        font-size: 2.2em;
+        line-height: 2em;
         margin-top: 4em;
         margin-bottom: 0.5em;
         margin-right: auto;
         margin-left: auto;
+        font-weight: 400;
 
         @include media($large-screen) {
-          font-size: 1.8em;
+          font-size: 2em;
+          line-height: 2em;
+          font-weight: 500;
           width: 45%;
         }
       }
@@ -46,12 +50,14 @@
       article {
         background-color: rgba(0,0,0,0.5);
         font-weight: 300;
-        line-height: 1.4em;
+        font-size: 0.9em;
+        line-height: 2em;
         margin: 0 auto 3em auto; 
 
         @include media($large-screen) {
           font-size: 1.1em;
           max-width: 40%;
+          line-height: 2em;
         }
       }
     }
@@ -63,7 +69,10 @@
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $hero-color: white;
-  $hero-image-sec: 'http://i.imgur.com/cBWPjmp.jpg';
+  //$hero-image-sec: 'http://i.imgur.com/yyfQ41Uh.jpg';
+  $hero-image-sec: 'http://i.imgur.com/zKRkFHKl.jpg';
+  
+
   opacity: .95;
 
   @include background(url($hero-image-sec));

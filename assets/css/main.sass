@@ -99,6 +99,7 @@ p
   font-size: 14px
   font-weight: 700
   border-bottom: 2px solid gray
+  
 
 .artcl-contnr
 
@@ -157,7 +158,7 @@ main
         text-align: left
         //background-color: rgba(255,255,255,0.1) 
         color: black
-        transition-property: all
+        transition-property: margin
         transition-duration: 0.30s
         transition-timing-function: linear
         font-size: 20px
@@ -166,10 +167,10 @@ main
         width: 90%
 
         a
-          color: black
+          color: white
           text-decoration: none
 
-        a:hover
+        a:hover, a:active, a:focus
           color: black
           text-decoration: underline
 
@@ -186,10 +187,14 @@ main
       li:hover text
         display: inline
 
-      li:hover
-        background-color: white
+      li:hover > a
+        color: black
+
+      li:hover, li:active, li:focus
+        background-color: rgba(255,255,255,0.4)
         margin-bottom: 5px
         margin-top: 5px
+        cursor: default
 
 
 .list-header
@@ -224,9 +229,10 @@ main
   line-height: 2em
   position: relative
   top: 20px
-  letter-spacing: 40px
+  letter-spacing: 20px
   margin-bottom: 35px
-  padding-left:40px
+  padding-left: 20px
+  outline: 1px solid white
 
   @include media($medium-screen)
     margin-bottom: 25px
@@ -238,7 +244,129 @@ main
     margin-bottom: 25px
     letter-spacing: 50px
 
-//----------------------( Skills END )----------------------//
+/*----------------------
+                        ( Skills END )
+                                      ----------------------*/
+
+
+
+
+/*----------------------
+                        ( Gallery START )
+                                      ----------------------*/
+
+*
+  box-sizing: border-box
+
+.gallery-cntnr
+  height: 100%
+  width: inherit
+
+.gallery 
+  width: inherit
+  margin: 0 auto
+  //background: #fff
+  //box-shadow: 0 1px 2px rgba(0,0,0,.5)
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  margin-top: 70px
+  margin-bottom: 50px
+
+  @include media($medium-screen)
+    width: 90%
+    padding: 5px
+
+  @include media($large-screen)
+    width: 80%
+    padding: 5px
+
+.gallery > div 
+  float: left
+  padding: 3px
+  margin: 0 auto
+
+  @include media($medium-screen)
+    padding: 5px
+
+  @include media($large-screen)
+    padding: 5px
+
+.gallery > div > img 
+  width: 150px
+  transition: .1s transform
+  transform: translateZ(0)
+
+  @include media($medium-screen)
+    width: 200px
+
+  @include media($large-screen)
+    width: 250px
+
+.gallery > div:hover
+  z-index: 1
+
+.gallery > div:hover > img 
+  transform: scale(1.8,1.8)
+  transition: .3s transform
+
+.cf:before, .cf:after 
+  //display: table
+  //content: ""
+  //line-height: 0
+
+.cf:after 
+  clear: both
+
+.gallery-page-header
+  text-align: center
+  font-weight: 700
+  font-size: 1.7em
+  //text-decoration: underline
+  background-color: rgba(255,255,255,0.9) 
+  color: black
+  border-radius: 3px
+  line-height: 2em
+  position: relative
+  top: 20px
+  letter-spacing:20px
+  padding-left: 20px
+  outline: 1px solid black
+
+  @include media($medium-screen)
+    margin-bottom: 25px
+    padding: 15px
+    letter-spacing: 50px
+
+  @include media($large-screen)
+    padding: 15px
+    margin-bottom: 25px
+    letter-spacing: 50px
+
+.gallery-node
+  color: black
+  width: 90%
+  text-align: center
+  margin-top: -50px
+  opacity: .5
+  margin-left: 25px
+  margin-right: 25px
+
+  @include media($medium-screen)
+    width: 100%
+    margin-left: 0px
+    margin-right: 0px
+    
+
+
+/*----------------------
+                        ( Gallery END )
+                                      ----------------------*/
+
+
+/*----------------------
+                        ( Border START )
+                                      ----------------------*/
 
 $offred: #EF4F50
 $offblue: #00D2E0
@@ -264,4 +392,24 @@ $offmiddle: #779098
   background: -o-linear-gradient(left, $offred 0%,$offblue 100%)
   background: -ms-linear-gradient(left, $offred 0%,$offblue 100%)
   background: linear-gradient(to right,  $offred 0%,$offblue 100%)
+
+
+/*----------------------
+                        ( Border END )
+                                      ----------------------*/
+
+#js-mobile-menu
+  //transition: background 0.5s ease
+  margin-top: 15px
+  margin-right: 10px
+  width: 30px
+  height: 30px
+  background-size: cover
+
+.js-mobile-menu-clicked
+  //transition: background 0.5s ease
+  opacity: .5
+  background: url(http://imgh.us/download_7.svg) no-repeat
+  
+
 
