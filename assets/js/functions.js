@@ -10,14 +10,16 @@ $(document).ready(function() {
       }
     });
   });
-$('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+$('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click',function (e) {
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
     e.preventDefault();
   });
-$('.sliding-panel-button1,.sliding-panel-fade-screen1,.sliding-panel-close1').on('click touchstart',function (e) {
-    $('.sliding-panel-content1,.sliding-panel-fade-screen1').toggleClass('is-visible');
+$('.sliding-panel-button1,.sliding-panel-fade-screen1,.sliding-panel-close1').on('click',function (e) {
+    $('.sliding-panel-content1').toggleClass('is-visible');
+    $('.sliding-panel-fade-screen1').toggleClass('is-visible');
     e.preventDefault();
   });
+
 
   var element = document.getElementById("js-fadeInElement");
   $(element).addClass('js-fade-element-hide');
@@ -41,7 +43,7 @@ $('.sliding-panel-button1,.sliding-panel-fade-screen1,.sliding-panel-close1').on
     }
   });
 
-  var isClicked = true;
+/*  var isClicked = true;
 
 $('#js-mobile-menu').on('click', function(){
   if(isClicked){
@@ -50,12 +52,28 @@ $('#js-mobile-menu').on('click', function(){
     isClicked = false;
     }else{
       $(this).removeClass('js-mobile-menu-clicked');
-      $(this).css('background', 'url(http://imgh.us/1438443780_menu-alt.svg) no-repeat');
+      $(this).css('ackground', 'url(http://imgh.us/1438443780_menu-alt.svg) no-repeat');
       isClicked = true;
       }
-  });
+  });*/
 
+(function() {
 
+  "use strict";
 
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+})();
 });
 

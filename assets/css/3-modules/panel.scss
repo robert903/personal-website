@@ -16,7 +16,7 @@
   background: $sliding-panel-background;
   z-index: 1;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  z-index: 999999;
 
   ul {
     padding: 0;
@@ -34,10 +34,7 @@
     font-weight: bold;
     padding: 2em;
     text-decoration: none;
-
-    &:focus {
-      background-color: $sliding-panel-background-focus;
-    }
+    
 
     &:hover {
       background-color: $sliding-panel-background-hover;
@@ -64,9 +61,10 @@
   }
 }
 
-.sliding-panel-button {
-  
+.sliding-panel-button:hover {
+    display: inline;
 }
+
 .slider-close{
   background-color: lighten($red, 3%);
   cursor: pointer;
@@ -100,9 +98,8 @@
   @include transform(translateX(320px));
   @include transition(all 0.4s ease-in-out);
   background: $sliding-panel-background;
-  z-index: 1;
+  z-index: 999999;
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
 
   ul {
     padding: 0;
@@ -162,7 +159,7 @@
 }
 .contact1{
   text-align: center;
-  font-family: roboto;
+  //font-family: roboto;
   padding: 20px 0px;
 
   span{

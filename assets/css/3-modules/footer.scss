@@ -46,6 +46,7 @@
   }
 
   li a {
+    transition: all 0.11s cubic-bezier(.33,.06,1,0);
     color: $footer-link-color;
     text-decoration: none;
 
@@ -82,4 +83,38 @@
 
 .maxslob{
   color: darken(lightblue, 20%);
+  transition: color 0.3s ease
+}
+
+.maxslob:hover{
+  color: white;
+}
+
+.slide-center-out 
+{
+text-decoration:none;
+display: inline-block;
+color:white;
+cursor: default;
+}
+/* add a empty string after the elment with class .slide-center-out  */
+.slide-center-out:after 
+{
+content: '';
+display: block;
+height: 2px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+-webkit-transition: width .5s ease, background-color .5s ease;
+-moz-transition: width .5s ease, background-color .5s ease;
+ 
+margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+}
+ 
+/* Change the width and background on hover, aka sliding from the middle to the left and right */
+.slide-center-out:hover:after 
+{
+width: 100%;
+background: white;
 }

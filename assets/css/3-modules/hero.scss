@@ -3,7 +3,7 @@
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $hero-color: white;
-  $hero-image: 'http://i.imgur.com/y530wJO.jpg';
+  $hero-image: 'http://i.imgur.com/K3bTAsg.jpg';
   opacity: .95;
 
   @include background(url($hero-image));
@@ -30,6 +30,7 @@
 
       
       h1 {
+        font-family: Raleway;
         background-color: rgba(255,255,255,0.5);
         font-size: 2.2em;
         line-height: 2em;
@@ -37,7 +38,7 @@
         margin-bottom: 0.5em;
         margin-right: auto;
         margin-left: auto;
-        font-weight: 400;
+        font-weight: bold;
 
         @include media($large-screen) {
           font-size: 2em;
@@ -48,6 +49,7 @@
       }
 
       article {
+        font-family: Raleway;
         background-color: rgba(0,0,0,0.5);
         font-weight: 300;
         font-size: 0.9em;
@@ -70,7 +72,7 @@
   $large-screen: em(860) !default;
   $hero-color: white;
   //$hero-image-sec: 'http://i.imgur.com/yyfQ41Uh.jpg';
-  $hero-image-sec: 'http://i.imgur.com/zKRkFHKl.jpg';
+  $hero-image-sec: 'http://i.imgur.com/JpgGoWH.png';
   
 
   opacity: .95;
@@ -78,8 +80,8 @@
   @include background(url($hero-image-sec));
   background-color: #324766;
   background-position: top;
-  background-repeat: no-repeat;
+  background-repeat: all;
   background-attachment: fixed;
-  background-size: cover;
+  //background-size: cover;
   padding-bottom: 5.5em;
 }

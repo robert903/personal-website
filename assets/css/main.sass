@@ -42,6 +42,7 @@ h1, article
   span
     text-decoration: underline
 
+
 h1
   font-weight: 400
 
@@ -95,7 +96,7 @@ p
 
 .text-panel
   margin-top: 90px
-  font-family: monospace
+  //font-family: monospace
   font-size: 14px
   font-weight: 700
   border-bottom: 2px solid gray
@@ -107,7 +108,7 @@ p
     text-align: left
     display: block
     margin-top: 65px
-    font-family: roboto
+    font-family: Raleway
     font-size: 1.2em
     font-weight: 300
     margin-bottom: 30px
@@ -142,7 +143,7 @@ main
       position: relative
       top: 30px
       margin: 0 auto
-      background-color: rgba(255,255,255,0.3) 
+      background-color: rgba(255,255,255,1) 
       width: 90%
       padding-bottom: 5px
 
@@ -156,18 +157,19 @@ main
         text-align: left
         top: 20px
         text-align: left
-        //background-color: rgba(255,255,255,0.1) 
+        //background-color: rgba(255,255,255,0.9) 
         color: black
-        transition-property: margin
-        transition-duration: 0.30s
-        transition-timing-function: linear
+        //transition-property: margin
+        //transition-duration: 0.30s
+        //transition-timing-function: linear
         font-size: 20px
         margin-left: 5%
         box-shadow: 0px 2px 0px 0px black
         width: 90%
 
         a
-          color: white
+          color: black
+          font-weight: bold
           text-decoration: none
 
         a:hover, a:active, a:focus
@@ -191,10 +193,10 @@ main
         color: black
 
       li:hover, li:active, li:focus
-        background-color: rgba(255,255,255,0.4)
-        margin-bottom: 5px
-        margin-top: 5px
-        cursor: default
+        //background-color: rgba(255,255,255,0.4)
+        //margin-bottom: 5px
+        //margin-top: 5px
+        cursor: auto
 
 
 .list-header
@@ -220,10 +222,10 @@ main
 
 .page-header
   text-align: center
-  font-weight: 700
+  //font-weight: 700
   font-size: 1.7em
   //text-decoration: underline
-  background-color: rgba(0,0,0,0.9) 
+  background-color: rgba(0,0,0,0.8) 
   color: white
   border-radius: 3px
   line-height: 2em
@@ -233,6 +235,7 @@ main
   margin-bottom: 35px
   padding-left: 20px
   outline: 1px solid white
+  //font-weight: bold
 
   @include media($medium-screen)
     margin-bottom: 25px
@@ -320,7 +323,7 @@ main
 
 .gallery-page-header
   text-align: center
-  font-weight: 700
+  //font-weight: 700
   font-size: 1.7em
   //text-decoration: underline
   background-color: rgba(255,255,255,0.9) 
@@ -332,6 +335,7 @@ main
   letter-spacing:20px
   padding-left: 20px
   outline: 1px solid black
+  //font-weight: bold
 
   @include media($medium-screen)
     margin-bottom: 25px
@@ -344,13 +348,14 @@ main
     letter-spacing: 50px
 
 .gallery-node
-  color: black
+  color: #333333
   width: 90%
   text-align: center
   margin-top: -50px
-  opacity: .5
+  opacity: 0.6
   margin-left: 25px
   margin-right: 25px
+  font-weight: 400
 
   @include media($medium-screen)
     width: 100%
@@ -397,19 +402,3 @@ $offmiddle: #779098
 /*----------------------
                         ( Border END )
                                       ----------------------*/
-
-#js-mobile-menu
-  //transition: background 0.5s ease
-  margin-top: 15px
-  margin-right: 10px
-  width: 30px
-  height: 30px
-  background-size: cover
-
-.js-mobile-menu-clicked
-  //transition: background 0.5s ease
-  opacity: .5
-  background: url(http://imgh.us/download_7.svg) no-repeat
-  
-
-
