@@ -62,22 +62,21 @@ var fade = function(){$(this).closest(this).find('text').fadeToggle('fast');};
 
     $('li').on('mouseenter', fade);
     $('li').on('mouseleave', fade);
+/*$( document ).ajaxStart(function() {
+  
+});*/
 
-$('.ajax, #ajax').on('click', function(){
-    $.ajax('/ajax.html', {
+$('.ajax').on('click', function(){
+    $.ajax('ajax.html', {
       success: function (response){
-        //$('.ajax, #ajax').on('click', function(){
           $('.ajax').html(response).slideDown();
+          //$('.isLoading').hide();
           $('.ajax').css('padding', '0');
-          $('.ajax').css('background', 'none');
-        //});
       }, 
-      data: {'conf': 123},
       error: function(request,errorType,errorMessage){console.log('Error: ' + errorType + ' with message: ' + errorMessage);},
-      timeout: 2000,
-      beforeSend: function(){$('.ajax').addClass('isLoading');},
-      complete: function(){$('.ajax').removeClass('isLoading');}
-
+      timeout: 5000,
+      beforeSend: function(){$('.isLoading').slideDown('fast');},
+      complete: function(){$('.isLoading').hide();}
     });
   });
 
