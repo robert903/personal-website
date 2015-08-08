@@ -77,11 +77,31 @@
 
   opacity: .95;
 
-  @include background(url($hero-image-sec));
-  background-color: #324766;
-  background-position: top;
-  background-repeat: all;
-  background-attachment: fixed;
+
+
+  @include background-image(linear-gradient(135deg,#333333, $blue 50%, #333333));
+  //@include background(url($hero-image-sec));
+  //background-color: #324766;
+  //background-position: top;
+  //background-repeat: all;
+  //background-attachment: fixed;
   //background-size: cover;
+  padding-bottom: 5.5em;
+}
+
+.hero-third { 
+
+  @include background-image(linear-gradient(135deg,#333333, $red 50%, #333333));
+  padding-bottom: 5.5em;
+}
+
+.hero-four { 
+    background-color: white;
+  //@include background-image(linear-gradient(135deg,#333333, honeydew 50%, #333333));
+  padding-bottom: 5.5em;
+}
+
+.hero-six { 
+  @include background-image(linear-gradient(135deg,#333333, honeydew 50%, #333333));
   padding-bottom: 5.5em;
 }

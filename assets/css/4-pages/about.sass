@@ -1,0 +1,75 @@
+.hero-five
+  color: #333333
+
+  article
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    font-family: Raleway
+
+    div
+      span
+        text-decoration: none
+        color: $red
+
+    #d1, #d3
+      margin: 0 10px
+      width: 410px
+
+#d4
+  //box-shadow: 0 0 2px black
+  width: 90%
+  margin: 33px auto
+
+  @include media ($large-screen)
+  	width: 700px
+
+  @include media ($medium-screen)
+    width: 500px
+
+  span
+    text-decoration: none
+    color: $red
+
+
+#d3
+  text-align: left
+
+  @include media ($medium-screen)
+    text-align: right
+
+#d2
+  height: 150px
+  width: 180px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.circ-panel
+  background: url(https://pp.vk.me/c625827/v625827378/1da3/sTzZI3UAab8.jpg) 0% 0% no-repeat
+  background-size: cover
+  width: 130px
+  height: 130px
+  border-radius: 65px
+  border: 3px solid
+  -webkit-animation: rainbow 10s infinite linear
+
+
+@-webkit-keyframes rainbow 
+  0%
+    border:#B83D3D
+  14% 
+    border:#B6C144
+  28%
+    border:#40BF57
+  43%
+    border:#44C1C1
+  57%
+    border:#4046BF
+  72%
+    border:#BC44C1
+  86%
+    border:#BF4097
+  100%
+    border:#B83D3D
+

@@ -18,22 +18,38 @@
     @include flex-basis(20em);
     @include flex-grow(1);
     box-shadow: 0 0 4px 0 rgba(0,0,0,.8);
-    padding: 150px 0px;
+    //padding: 150px 0px;
     padding-bottom: 0px;
+
+    @include media ($medium-screen){
+      //padding: 10px 0px;
+      margin-bottom: 0px;
+    }
   }
 
   .bul-icn-cnt{
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 80%;
+    margin-top: 40px;
+    width: 100%;
     height: inherit;
     background-color: rgba(0,0,0,.15);
     position: relative;
-    top: -130px;
+    //top: -130px;
     border-radius: 30px;
     display: flex;
     justify-content: left;
+
+    @include media($medium-screen){
+      width: 90%;
+      margin-top: 20px;
+    }
+    @include media($large-screen){
+      width: 80%;
+      margin-top: 20px;
+    }
   }
+  
 
   .bullet-icon {
     background: $action-color;
@@ -63,23 +79,37 @@
   }
 
   .bullet-content {
-    height: 300px;
+    height: inherit;
     //margin-left: $icon-bullet-size * 1.4;
     margin: 0px 20px;
     text-align: center;
-    //margin-bottom: 2em;
+    margin-bottom: 2em;
+    //height: 400px;
+
+    @include media($medium-screen){
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      //height: 370px;
+    } 
+
+    @include media($large-screen){
+      //height: 300px;
+    }
   }
 
+
   h2 {
-    position: relative;
-    top: -214px;
-    left: 10px;
-    display: inline-block;
+    //position: relative;
+    padding: 14px;
+    padding-right: 55px;
+    top: -54px;
+    left: 75px;
+    //width: 220px;
+    display: block;
     text-decoration: underline;
     font-family: Raleway;
     font-size: $icon-bullet-size / 2.5 + 0.1;
-    margin: 0 0 ($icon-bullet-size / 6) 0;
-    padding-top: $icon-bullet-size / 7;
+    margin: 0 auto;
   }
 
   li {
@@ -88,11 +118,20 @@
 
   p {
     position: relative;
-    top: -170px;
+    //top: -50px;
     color: $base-font-color;
     font-size: 20px;
     text-align: left;
-    margin: 0 20px;
+    margin: 0 5px;
+    margin-bottom: 1em;
+
+    @include media($medium-screen){
+      margin: 0 25px;
+    } 
+
+    @include media($large-screen){
+      margin: 0 50px;
+    }
   }
 
   img {

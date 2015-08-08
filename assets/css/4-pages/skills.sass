@@ -1,0 +1,126 @@
+main 
+  height: inherit
+  width: inherit
+  margin: 0 auto
+     
+  section
+    width: inherit
+    height: inherit
+    margin: 0 auto
+    margin-top: 60px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    //flex-direction: center
+      
+
+    ul
+      position: relative
+      top: 30px
+      margin: 0 auto
+      //background-color: rgba(255,255,255,1) 
+      width: 90%
+      padding-bottom: 5px
+
+      @include media($medium-screen)
+        width: 90%
+
+      @include media($large-screen)
+        width: 45%
+
+      li
+        text-align: left
+        top: 20px
+        text-align: left
+        color: white
+        font-size: 20px
+        margin-left: 5%
+        box-shadow: 0px 2px 0px 0px rgba(255,255,255,.4)
+        width: 90%
+
+
+        a
+          color: white
+          font-weight: bold
+          text-decoration: none
+          margin-left: 30px
+
+        a:hover, a:active, a:focus
+          color: white
+          text-decoration: underline
+
+        @include media($medium-screen)
+          width: 90%
+
+        @include media($large-screen)
+          width: 90%
+
+      li
+        text 
+          display: none
+
+
+      li:hover > a
+        color: white
+        text-decoration: underline
+
+
+      li:hover, li:active, li:focus
+        //background-color: rgba(255,255,255,0.4)
+        //margin-bottom: 5px
+        //margin-top: 5px
+        cursor: default
+
+
+.list-header
+  margin-left: 5%
+  text-align: center
+  font-weight: 500
+  font-size: 1.5em
+  background-color: rgba(0,0,0,0.5) 
+  color: white
+  border-radius: 1px
+  line-height: 1.5em
+  position: relative
+  top: 20px
+  margin-top: 5px
+  margin-bottom: 35px
+  width: 8em
+  padding-left: 2px
+  
+.li-last 
+  margin-bottom: 20px
+
+.page-header
+  margin: 0 auto
+  width: 200px
+  font-size:40px
+  position: relative
+  letter-spacing: 3px
+  top: 30px
+  box-shadow: 0px 2px 0px 0px white 
+  color: white
+  font-weight: bold
+  border-radius: 3px
+
+  span
+    display: block
+    width: 100%
+    text-align: center
+
+    @include media($medium-screen)
+      //width: 109%
+
+    @include media($large-screen)
+      //width: 108%
+
+
+  @include media($medium-screen)
+    width: 400px
+    margin-bottom: 25px
+    padding: 15px
+
+  @include media($large-screen)
+    width: 500px
+    padding: 15px
+    margin-bottom: 25px
