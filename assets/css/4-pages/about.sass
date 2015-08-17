@@ -4,39 +4,29 @@
   article
     display: flex
     justify-content: center
-    flex-wrap: wrap
+    align-items: center
+    flex-direction: column
     font-family: Raleway
+    font-size: 15px
+    margin: 0px 30px 20px 30px
 
+    @include media($medium-screen)
+      font-size: 20px
+
+    
     div
       span
         text-decoration: none
         color: $red
 
-    #d1, #d3
-      margin: 0 10px
-      width: 410px
+    ul
+      
 
-#d4
-  //box-shadow: 0 0 2px black
-  width: 90%
-  margin: 33px auto
-
-  @include media ($large-screen)
-  	width: 700px
-
-  @include media ($medium-screen)
-    width: 500px
-
-  span
-    text-decoration: none
-    color: $red
+      li
+        list-style-type: circle
 
 
-#d3
-  text-align: left
 
-  @include media ($medium-screen)
-    text-align: right
 
 #d2
   height: 150px
@@ -44,6 +34,8 @@
   display: flex
   justify-content: center
   align-items: center
+  position: relative
+  bottom: 50px
 
 .circ-panel
   background: url(https://pp.vk.me/c625827/v625827378/1da3/sTzZI3UAab8.jpg) 0% 0% no-repeat
@@ -73,3 +65,18 @@
   100%
     border:#B83D3D
 
+
+
+
+
+#about-node
+  font-size: 26px
+  text-align: center
+  display: block
+  margin-bottom: 20px
+
+  a
+    color: $red - 50
+
+  a:hover
+    color: #333333

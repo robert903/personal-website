@@ -25,7 +25,7 @@
   }
 
   ul {
-    margin-bottom: $base-spacing * 2;
+    margin-bottom: $base-spacing;
     padding: 0;
 
     @include media($medium-screen) {
@@ -58,8 +58,9 @@
 
   li h3 {
     color: $footer-color;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 800;
+    font-family: Raleway;
     margin-bottom: 0.4em;
   }  
 
@@ -117,4 +118,10 @@ margin:auto; /* center the cotent so it will sliding from the midddle to the lef
 {
 width: 100%;
 background: white;
+}
+
+.footer1{
+  position: relative;
+  bottom: 0;
+  left: -200px;
 }

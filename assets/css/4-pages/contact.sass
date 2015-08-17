@@ -1,5 +1,5 @@
 .hero-six
-  color: #333333
+  color: white
 
   main
     display: flex
@@ -9,28 +9,105 @@
     font-weight: bold
     text-align: center
 
+    span
+      //order: 3
+    
+    @include media ($medium-screen)
+      //order: 2
+
+ 
 .btn
-  height: 80px
-  width: 200px
+  //height: 80px
+  width: 150px
+  height: 150px
+  margin-bottom: 5px
+  background-color: rgba(0,0,0,.5)
+  //order: 2
+  font-size: 30px
+  font-family: Raleway
+  color: white
+  padding: inherit
+  text-align: center
+  transition: all 0.11s ease-in-out
+  font-weight: bold
+  border-radius: 50%
 
   @include media ($medium-screen)
-    width: 400px
+    font-size: 40px
+    font-weight: 400
+
+  @include media ($medium-screen)
+    width: 200px
+    height: 200px
+    //order: 1
 
   a
-    font-size: 16px
-    font-family: Raleway
-    color: white
-    padding: inherit
-    text-align: center
-    font-weight: bold
+    
 
-    @include media ($medium-screen)
-      font-size: 30px
-      font-weight: 400
 
+
+.btn:hover, .btn:active
+  color: black
 
 .btn:hover
-  //@include background-image(linear-gradient(180deg,#ff3333 , $blue,#ffffff))
+  background-color: rgba(255,255,255,.5)
 
-.btn:hover > a
-  color: white
+.cont
+  width: 70px
+  height: 70px
+
+.contact-container
+  display: flex
+  flex-wrap: wrap
+  justify-content:center
+  position: relative
+  top: 50px
+  margin-bottom: 10px
+  margin-top: 30px
+
+  
+
+
+.conta
+  padding: 10px 20px
+  margin: 10px 20px
+  width: 40%
+  position: relative
+  bottom: 20px
+  background-color: rgba(255,255,255,.1)
+  //order: 1
+
+  @include media ($large-screen)
+    padding: 0 15px
+    margin: 30px 5px
+    width: inherit
+    //order: 3
+
+  a
+    color: white
+
+.conta:hover
+  background-color: rgba(255,255,255,.9)
+
+  a
+    color: #333
+
+
+.contact-head
+  font-weight: bold
+  font-size: 40px
+  position: relative
+  top: 10px
+  padding: 0px 0 0px 0
+  display: block
+  width: inherit
+  text-align: center
+  margin: 0 20px
+  margin-bottom: 100px
+  background-color: rgba(0,0,0,.1)
+
+  @include media($medium-screen)
+    font-size: 60px
+    padding: 0px 0 0px 0
+    top: 10px
+    margin-bottom: 130px
