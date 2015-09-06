@@ -10,6 +10,7 @@ main
     margin-top: 60px
     display: flex
     flex-direction: row
+    justify-content: center
     flex-wrap: wrap
     //flex-direction: center
       
@@ -17,38 +18,34 @@ main
     ul
       position: relative
       top: -30px
-      margin: 0 auto
-      //background-color: rgba(255,255,255,1) 
-      //width: 90%
       padding-bottom: 5px
 
-      @include media($medium-screen)
-        width: 90%
 
-      @include media($large-screen)
+      @include media($medium-screen)
         width: 45%
 
+      @include media($large-screen)
+        width: 25%
+
       li
-        width: 100%
+        //width: 100%
         top: 20px
         color: white
         font-size: 20px
-        margin-left: 5%
-        margin: 0 auto
+        margin-left: 40px
         box-shadow: 0px 2px 0px 0px rgba(255,255,255,.15)
         //width: 50%
         //text-align: center
 
         @include media($medium-screen)
-          width: 55%
+          
 
         @include media($large-screen)
-          width: 55%
+          
 
 
         a
           color: white
-          font-weight: bold
           text-decoration: none
           //margin-left: 30px
           text-align: left
@@ -81,27 +78,23 @@ main
 
 
 .list-header
-  margin-left: 5%
   text-align: center
   font-weight: 500
   font-size: 1.7em
   background-color: rgba(0,0,0,0.5) 
   color: white
   border-radius: 1px
-  line-height: 1.5em
   position: relative
   top: 20px
-  margin-top: 5px
-  margin-bottom: 35px
-  width: 100%
-  padding-left: 2px
-  margin: 40px auto
+  padding: 0px 15px
+  margin: 40px 0px
+  margin-left: 20px
 
   @include media($medium-screen)
-    width: 55%
+
 
   @include media($large-screen)
-    width: 55%
+
   
 .li-last 
   margin-bottom: 20px

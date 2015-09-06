@@ -201,7 +201,7 @@ $(function() {
     return pb;
    }());
 
-   SliderModule.init({duration: 6000});
+   SliderModule.init({duration: 8000});
 
 });
 
