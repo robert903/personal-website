@@ -1,0 +1,209 @@
+@import '1-tools/normalize'
+
+*
+  font-family: Roboto
+  box-sizing: border-box
+
+.contain
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: column
+
+table
+  width: 80%
+  
+thead
+  text-align: center
+  font-weight: bold
+  font-size: 30px
+  border-bottom: 2px solid black
+  border-top: 2px solid black
+  
+  td
+    height: 70px
+    padding: 15px
+    
+tr
+  
+  td
+    box-shadow: 0px 1px 0px 0 black
+    border: 1px solid black
+    border-right: 2px solid black
+    text-align: center
+    width: 15%
+    font-weight: bold
+    height: 30px
+    cursor: default
+    
+  td:hover
+    background-color: blue + 120
+    color: white
+    
+#week
+  border-bottom: 2px solid black
+  border-right: 2px solid black
+  font-size: 15px
+  
+.btn
+  margin: 20px
+  
+.containe
+  text-align: center
+  width: 30%
+  position: relative
+  top: -95px
+  z-index: -9999
+  
+  .right
+    float: left
+  
+  .left
+    float: right
+    
+.second
+  width: 80%
+  margin-top: 30px
+  
+.today
+  background-color: #333
+  color: white
+  border: none
+  
+.bell
+  width: 100%
+  position: relative
+  margin: 0 auto
+
+  tr
+    
+    thead
+      border-top: none
+    
+    td
+      @media screen and (max-width: 765px)
+        border-right: 1px solid black
+
+#week:nth-child(2) span
+  -webkit-animation-delay: 0.1s
+  
+#week:nth-child(3) span
+  -webkit-animation-delay: 0.2s
+  
+#week:nth-child(4) span
+  -webkit-animation-delay: 0.3s
+  
+#week:nth-child(5) span
+  -webkit-animation-delay: 0.4s
+  
+#week:nth-child(6) span
+  -webkit-animation-delay: 0.5s
+  
+.fadeInDownBig
+  -webkit-animation-delay: 0s
+  -webkit-animation-duration: 0.01s
+  
+.str1
+  -webkit-animation-delay: 0.4s
+  
+.str2
+  -webkit-animation-delay: 0.6s
+  
+.str3
+  -webkit-animation-delay: 0.8s
+  
+.str4
+  -webkit-animation-delay: 1s
+  
+.str5
+  -webkit-animation-delay: 1.2s
+  
+.bell
+  animation-delay: 1.3s
+  
+.p1
+  animation-delay: 1.5s
+
+.p2
+  animation-delay: 1.7s
+  
+.p3
+  animation-delay: 1.9s
+  
+.p4
+  animation-delay: 2.1s
+  
+.p5
+  animation-delay: 2.3s
+  
+.containe
+  animation-delay: 2.3s
+  
+  
+  @media screen and (max-width: 900px)
+    width: 90%
+
+  @media screen and (max-width: 568px)
+    width: 100%
+
+
+thead
+  border-top: none
+
+  td
+    border-top: none
+
+tr
+  
+  thead
+    border-top: none
+  
+  td
+
+  @media screen and (max-width: 765px)
+    border-right: 1px solid black
+
+
+
+@media screen and (max-width: 900px) and (min-width: 681px)
+
+  table
+    width: 90%
+
+@media screen and (max-width: 680px)
+
+  .contain
+    width: 750px
+
+  #First, #Second
+    display: block
+    width: 750px
+    overflow-x: auto
+
+footer
+  position: relative
+  bottom: 0px
+  width: 100%
+  height: 80px
+  background-color: #333
+
+  a
+    color: white
+    height: inherit
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 25px
+    text-transform: uppercase
+
+  a:hover, a:active, a:focus
+    text-decoration: none
+    color: blue + 120
+
+footer:hover
+  background-color: #333 + 20
+
+@media screen and (max-width: 680px)
+   footer
+    width: 750px

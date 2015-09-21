@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio</title>
+  <title>MaxSlob's Portfolio</title>
   <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Information about me, my knowledge, projects. Also includes contact information.">
+  <meta name="title" content="My Portfolio as a Web-Developeper's">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
         <script>
@@ -54,7 +59,7 @@
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link" ><a href="#about">About Me</a></li>
+        <li class="nav-link"><a href="#about">About Me</a></li>
         <li class="nav-link"><a href="#skills">Skills</a></li>
         <li class="nav-link" ><a href="#hobby">Hobbies</a></li>
         <li class="nav-link" ><a href="#proj">Projects</a></li>
@@ -92,11 +97,11 @@
 
   
 
-<div class="hero">
+<div class="hero animated fadeIn">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1>Welcome</h1>
-      <article>Hi! I'm <span>17</span>, my name is <span>Max</span> and I'm from <span>Belarus</span></article>  
+      <h1 class="animated fadeInLeft">Welcome</h1>
+      <article class="animated fadeInRight">Hi! I'm <span>17</span>, my name is <span>Max</span> and I'm from <span>Belarus</span></article>  
     </div>
   </div>
 </div>
@@ -136,39 +141,6 @@
       <section>
       <ul>
           <header class="list-header">
-            Completed courses
-          </header>
-            <li style="font-weight: bold;font-size: 1.4em">
-              codeschool.com
-            </li>
-           <li >
-              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/blasting-off-with-bootstrap" target="blank">Bootstrap</a>
-           </li>
-            <li>
-              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/fundamentals-of-design" target="blank">Design Fundamentals</a>
-              </li>
-           <li style="margin-bottom: 15px">
-              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/try-jquery/" target="blank">Try jQuery</a> 
-            </li>
-            <li style="font-weight: bold;font-size: 1.4em">
-              codecademy.com
-            </li>
-            <li>
-              <a style="margin-left: 15px" href="https://www.codecademy.com/en/skills/make-an-interactive-website" target="blank">Interactive Website</a> 
-            </li>
-            <li>
-              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/web" target="blank">HTML & CSS</a> 
-            </li> 
-            <li>
-              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/javascript" target="blank">JavaScript</a> 
-            </li> 
-            <li>
-              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/jquery" target="blank">jQuery</a> 
-            </li> 
-               
-          </ul>
-          <ul>
-          <header class="list-header">
             Front-End
           </header>
            <li>
@@ -189,17 +161,69 @@
               <li>
                 <a  target="blank" id="p">Angular.js</a> (In progress)
               </li>
-              
-          </ul>
-          <ul>
-          <header class="list-header" >
-            Misc
+           <header class="list-header">
+            CodeSchool
           </header>
-           <li>
-
-              <a target="blank">GIT</a>
+            <li style="font-weight: bold;font-size: 1.4em">
+              
+            </li>
+            <li>
+              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/fundamentals-of-design" target="blank">Design Fundamentals</a>
+              </li>
+            <li>
+              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/try-jquery/" target="blank">Try jQuery</a> 
+            </li>
+           <li style="margin-bottom: 15px">
+              <a style="margin-left: 15px" href="https://www.codeschool.com/courses/blasting-off-with-bootstrap" target="blank">Bootstrap</a>
            </li>
           </ul>
+          <ul>
+            <header class="list-header">
+            Codecademy
+          </header>
+            <li>
+              <a style="margin-left: 15px" href="https://www.codecademy.com/en/skills/make-an-interactive-website" target="blank">Interactive Website</a> 
+            </li>
+            <li>
+              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/web" target="blank">HTML & CSS</a> 
+            </li> 
+            <li>
+              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/javascript" target="blank">JavaScript</a> 
+            </li> 
+            <li>
+              <a style="margin-left: 15px" href="https://www.codecademy.com/en/tracks/jquery" target="blank">jQuery</a> 
+            </li>
+             <li>
+              <a style="margin-left: 15px" href="https://www.codecademy.com/ru/courses/learn-angularjs" target="blank">Angular (50%)</a> 
+            </li> 
+               
+             <header class="list-header">
+            Udacity
+          </header>
+              <li>
+                <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893" target="blank" id="p">Responsive Web Design Foundamentals           </a>
+              </li>
+          </ul>
+          
+          
+          <ul>
+          
+              <header class="list-header">
+            MISC
+          </header>
+              <li>
+                <a target="blank" id="p">Git           </a>
+                <!-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp -->
+
+              </li>
+              </ul>
+          
       </section>
     </main>
   </div>
@@ -232,7 +256,7 @@
         <span>Cycling</span>
       </box></div>
           <article>
-            I really like cycling, I ride almost every day, I have already rode all over the minsk.
+            I like cycling, I ride almost every day, I have already rode all over the minsk.
           </article>
       </section>
 
@@ -273,7 +297,8 @@
 
       <div class="caption">
         <h2 class="slider-title">Java Project</h2>
-        <p>I've built that 'game' using tutorial on youtube to learn OOP on practice.</p>
+        <p>Via tutorial on youtube, using OOP on practice. <br>Code is available on 
+        <a href="https://github.com/maxslob/java-game" target="blank">GitHub</a></p>
       </div>
     </li>
 
@@ -281,8 +306,20 @@
       <img src="http://i.imgur.com/0WiTQFS.jpg" title="" alt="">
 
       <div class="caption">
-        <h2 class="slider-title">My CodePen Profile</h2>
-        <p>Check out my <a href="http://codepen.io/maxslob/" target="blank">Profile</a> to see my little projects.</p>
+        <h2 class="slider-title">CodePen Profile</h2>
+        <p>To have a look to my projects that's hosted there. <br>Check out my <a href="http://codepen.io/maxslob/" target="blank">Profile</a></p>
+      </div>
+    </li>
+    <li>
+      <img src="http://i.imgur.com/8mCHmvd.jpg" title="" alt="">
+
+      <div class="caption">
+        <h2 class="slider-title">Group TimeTable</h2>
+        <p>Used Angular.js + JavaScript,<br>
+         Code is available in CodePen profile.<br>
+        <a href="http://timetable.maxslob.website">Take a look </a>
+        | <a href="http://codepen.io/maxslob/pen/gaOjbw">Code</a>
+        </p>
       </div>
     </li>
 
@@ -335,6 +372,7 @@
   </div>
 
   <div class="bottom-border"> </div>
+
 
  <!--  <div id="ABC"><div class="ajax"><a id="ajax">Do u want to know a little bit more? Press me.</a></div>  -->
 <div class="isLoading"></div></div><footer class="footer" role="contentinfo">

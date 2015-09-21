@@ -91,9 +91,9 @@
 
 .hero-third { 
 
-  @include background-image(linear-gradient(180deg,#333333, #0C6 50%, #333333));
+  @include background-image(linear-gradient(180deg,#333333, hsl(140, 100%, 50%) 50%, #333333));
   padding-bottom: 5.5em;
-}#F33
+}
 
 .hero-four { 
     background-color: white;
