@@ -134,3 +134,90 @@ p
 
 #CV:hover, #CV:active, #CV:focus
   text-decoration: none
+
+.node
+  position: fixed
+  width: 100%
+  display: block
+  margin-left: auto
+  margin-right: auto
+  z-index: 94912941294
+  background-color: rgba(0,0,0, .7)
+  bottom: 0px
+
+  section
+    width: 60%
+    margin: 0 auto
+
+  article:nth-child(2)
+    margin-left: 30px
+
+  article:nth-child(3)
+    margin-left: 60px
+
+  article
+    span
+      text-decoration: none
+      color: purple + 130
+
+.close
+  position: fixed
+  bottom: 15px
+  right: 10px
+  font-size: 30px
+  font-weight: bold
+  cursor: pointer
+  text-align: center
+  display: block
+  vertical-align: middle
+  box-shadow: 0 0 0 3px #333
+
+.close:hover
+  background-color: rgba(0,0,0, .7)
+
+.hidden
+  display: none
+
+
+
+
+@media screen and (min-width: 990px) and (max-width: 1180px) 
+  .node
+    section
+      width: 80%
+      margin: 0 auto
+
+@media screen and (min-width: 890px) and (max-width: 990px)
+  .node
+    section
+      width: 90%
+      margin: 0 auto
+
+@media screen and (max-width: 890px)
+  .node
+    section
+      width: 100%
+
+
+@media screen and (max-width: 790px)
+  .node
+    section
+      font-size: 0.9em
+
+  .close
+    bottom: 10px
+
+@media screen and (max-width: 712px)
+  .node
+    section
+      width: 85%
+      margin-left: 10px
+
+    article:nth-child(2)
+      margin-left: 0px
+
+    article:nth-child(3)
+      margin-left: 0px
+
+    .close
+      right: 5px
