@@ -1,5 +1,7 @@
  $(document).ready(function() {
 
+
+
 $('.close').click(function(){
       $('.node').animate({'opacity': '0'}, 600);
       $('.node').css('z-index', '-2300');

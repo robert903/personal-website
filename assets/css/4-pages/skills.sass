@@ -1,103 +1,78 @@
 main 
-  height: inherit
-  width: inherit
+  height: 100%
+  width: 100%
   margin: 0 auto
      
   section
-    width: inherit
+    width: 850px
     height: inherit
     margin: 0 auto
     margin-top: 60px
-    display: flex
-    flex-direction: row
-    justify-content: center
-    flex-wrap: wrap
-    //flex-direction: center
       
+    ul:nth-child(4)
+      box-shadow: none
 
     ul
-      position: relative
-      top: -30px
-      padding-bottom: 5px
-
-
-      @include media($medium-screen)
-        width: 45%
-
-      @include media($large-screen)
-        width: 25%
+      display: flex
+      box-shadow: 0 1px 0 0px white
 
       li
-        //width: 100%
-        top: 20px
-        color: white
-        font-size: 20px
-        margin-left: 40px
-        box-shadow: 0px 2px 0px 0px rgba(255,255,255,.15)
-        //width: 50%
-        //text-align: center
-
-        @include media($medium-screen)
-          
-
-        @include media($large-screen)
-          
-
+        margin: 21px 0px
+        padding: 0 5px
+        width: inherit
+        border-right: 2px solid rgba(255,255,255,.3)
+        cursor: default
+        
 
         a
           color: white
-          text-decoration: none
-          //margin-left: 30px
-          text-align: left
-
-        a:hover, a:active, a:focus
-          color: white
+          padding: 10px
           text-decoration: underline
 
-        @include media($medium-screen)
-          //width: 90%
+        a:hover
+          color: black
 
-        @include media($large-screen)
-          //width: 90%
+      header
+        width: 180px
+        font-weight: bold
+        font-size: 18px
+        margin: 2px 0
 
+        span
+          font-size: 33px
+
+  article:nth-child(4)
+    width: 850px
+    height: inherit
+    margin: 0 auto
+    margin-top: 60px
+
+    header
+      font-size: 22px
+      padding: 10px 0
+      margin: 10px 0
+      border-bottom: 1px solid white
+
+    ul
       li
-        text 
-          display: none
+        margin-left: 30px
+        font-size: 18px
+        list-style-type: circle
 
+.caption:hover .hide
+  opacity: 1
 
-      li:hover > a
-        color: white
-        text-decoration: underline
-
-
-      li:hover, li:active, li:focus
-        //background-color: rgba(255,255,255,0.4)
-        //margin-bottom: 5px
-        //margin-top: 5px
-        cursor: default
-
-
-.list-header
+.hide
+  opacity: 0
+  position: absolute
+  width: 200px
+  line-height: 2em
   text-align: center
-  font-weight: 500
-  font-size: 1.7em
-  background-color: rgba(0,0,0,0.5) 
-  color: white
-  border-radius: 1px
-  position: relative
-  top: 20px
-  padding: 0px 15px
-  margin: 40px 0px
-  margin-left: 20px
+  background-color: #333
+  transition: opacity 0.2s ease
 
-  @include media($medium-screen)
-
-
-  @include media($large-screen)
-
-  
-.li-last 
-  margin-bottom: 20px
+.show
+  display: block
 
 .page-header
   display: block
@@ -108,7 +83,6 @@ main
   padding: 70px 0 0px 0
   text-align: center
   margin: 0 20px
-  //argin-bottom: 20px
 
   @include media($medium-screen)
     font-size: 50px
