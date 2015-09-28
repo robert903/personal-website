@@ -4,7 +4,7 @@
 
 $('.close').click(function(){
       $('.node').animate({'opacity': '0'}, 600);
-      $('.node').css('z-index', '-2300');
+      $('.node').animate({'z-index': '-2300'}, 601);
     });
 
   var menuToggle = $('#js-mobile-menu').unbind();
