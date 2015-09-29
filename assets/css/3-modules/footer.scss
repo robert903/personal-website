@@ -13,66 +13,9 @@
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
 
- 
-
-  .footer-links {
-    @include clearfix;
-    margin-bottom: $base-spacing;
-
-    @include media($medium-screen) {
-      @include shift(3);
-    }
-  }
-
-  ul {
-    margin-bottom: $base-spacing;
-    padding: 0;
-
-    @include media($medium-screen) {
-      @include span-columns(6);
-      @include omega(3n);
-      @include clearfix;
-    }
-  }
-
-  li {
-    line-height: 1.5em;
-    list-style: none;
-    text-align: center;
-
-    @include media($medium-screen) {
-      text-align: left;
-    }
-  }
-
-  li a {
-    transition: all 0.11s cubic-bezier(.33,.06,1,0);
-    color: $footer-link-color;
-    text-decoration: none;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1.1em;
-    font-weight: 800;
-    font-family: Raleway;
-    margin-bottom: 0.4em;
-  }  
-
-  hr {
-    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
-    margin: 0 auto $base-spacing;
-    width: 12em;
-  }
-
   p {
     color: $footer-disclaimer-color;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.5em;
     margin: auto;
     max-width: 35em;

@@ -54,6 +54,41 @@
   })(); </script>
 </head>
 <body>
+  <div class="vNav">
+    <ul class="vNav">
+      <li>
+        <a href="#home">
+          <div class="label">Home</div>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <div class="label">About</div>
+        </a>
+      </li>
+      <li>
+        <a href="#skills">
+          <div class="label">Skills</div>
+        </a>
+      </li>
+      <li>
+        <a href="#hobby">
+          <div class="label">Hobbies</div>
+        </a>
+      </li>
+      <li>
+        <a href="#proj">
+          <div class="label">Projects</div>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <div class="label">Contact</div>
+        </a>
+      </li>
+     </ul>
+  </div>
+
   <!-- 
   <div class="node">
   <section>
@@ -126,7 +161,7 @@
       </div>
     </header>
 
-    <div class="hero animated fadeIn">
+    <div class="hero animated fadeIn par">
       <div class="hero-inner">
         <div class="hero-copy">
           <h1 class="animated fadeInLeft">Welcome</h1>
@@ -138,7 +173,7 @@
     <div class="bottom-border-sec"></div>
 
     <a id="about"></a>
-    <div class="hero-five">
+    <div class="hero-five par">
 
       <span class="head">About me</span>
 
@@ -161,7 +196,7 @@
     </div>
 
     <a id="skills"></a>
-    <div class="hero-second">
+    <div class="hero-second par">
       <div class="bg-cntr">
         <div class="skills-main"> 
           <div class="bottom-border"></div>
@@ -177,17 +212,18 @@
                 <span>1.</span> Front-End
               </header>
 
-              <div class="skills-item caption1" style="@media screen and (min-width:900px){margin-left: 10px}">HTML 
+              <div style="margin-left: 20px" class="skills-item caption1">HTML 
                 <h5 class="hide">Jade</h5>
               </div>
               <div class="skills-item caption1">CSS 
                 <h5 class="hide"> SASS</h5>
               </div>
               <div class="skills-item caption1">JavaScript 
-                <h5 class="hide">jQuery, AJAX</h5>
+                <h5 class="hide" style="padding: 13px">jQuery, AJAX *Angular.js<br>
+                                 *CoffeeScript
+                </h5>
               </div>
-              <div class="skills-item">Basic Design Features</div>
-              <div class="skills-item">Angular.js & CoffeeScript (In progress)</div> 
+              <div class="skills-item">& Basic Design Features</div>
             </div>
 
             <div class="skills-row">
@@ -216,6 +252,9 @@
               <div class="skills-item">
                 <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893" target="blank" id="p">Responsive Web Design Foundamentals</a>
               </div>
+              <div class="skills-item">
+                <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="blank" id="p">Git</a>
+              </div>
             </div>
 
             <div class="skills-row">
@@ -228,14 +267,19 @@
               <div class="skills-item">
                 <a href="https://www.codecademy.com/en/tracks/web" target="blank">HTML & CSS</a> 
               </div>
-              <div class="skills-item">
+              <div class="skills-item caption1">
                 <a href="https://www.codecademy.com/en/tracks/javascript" target="blank">JavaScript</a> 
+                  <h5 class="hide">
+                    <a href="https://www.codecademy.com/en/tracks/jquery" target="blank">jQuery</a>
+                    <br>
+                    <a href="https://www.codecademy.com/ru/courses/learn-angularjs" target="blank">Angular (50%)</a> 
+                  </h5>
               </div>
               <div class="skills-item">
-                <a href="https://www.codecademy.com/en/tracks/jquery" target="blank">jQuery</a>
+                
               </div>
               <div class="skills-item">
-                <a href="https://www.codecademy.com/ru/courses/learn-angularjs" target="blank">Angular (50%)</a> 
+                
               </div>
             </div>
           </section>
@@ -268,7 +312,7 @@
     <div class="bottom-border-sec"></div>
 
     <a id="hobby"></a>
-    <div class="hero-third">
+    <div class="hero-third par">
       <span class="head">My hobbies</span>
       <div class="hobbies-main">       
         <article>
@@ -310,7 +354,7 @@
     <div class="bottom-border"> </div>
 
     <a id="proj"></a>
-    <div class="hero-seven">
+    <div class="hero-seven par">
       <span class="head">Check out my projects</span>
       <section id="slider" class="container">
         <ul style="background-image: linear-gradient(135deg, #333, white, #333)" class="slider-wrapper">
@@ -373,8 +417,8 @@
     <div class="bottom-border-sec"></div>
 
     <a id="contact"></a>
-      <div class="hero-six">
-        <span class="contact-head">Contact me</span>
+      <div class="hero-six par">
+        <span class="contact-head">Contact & Info</span>
         <div class="contact-main"> 
           <a class="btn" href="mailto:maxsslob@gmail.com?subject=Hey%20Max,%20I%20have%20a%20message%20for%20you!">              
             <span>e-mail</span>
@@ -392,29 +436,7 @@
 
    <!--  <div id="ABC"><div class="ajax"><a id="ajax">Do u want to know a little bit more? Press me.</a></div>  -->
   <!-- <div class="isLoading"></div></div> -->
-    <footer class="footer" >
-      <div class="footer-links">
-        <ul>
-          <li><h3>Content</h3></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Blog</a></li>
-        </ul>
-        <ul>
-          <li><h3>Links</h3></li>
-          <li>
-            <a href="https://instagram.com/max.slob/" target="blank">Instagram</a>
-          </li>
-          <li>
-            <a href="https://github.com/maxslob/" target="blank">GitHub</a>
-          </li>
-        </ul>
-      <!--<ul>
-        <li><h3>Legal</h3></li>
-        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-      </ul>-->
-      </div>
-      <hr>
+    <footer class="footer">
       <p>Responsive, personal website<br>Belarus, Minsk, July 2015<br>Made by <a class="slide-center-out"><span class="maxslob">MaxSlob</span></a></p>
     </footer>
   </main>

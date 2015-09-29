@@ -2,6 +2,7 @@
   height: 100%
   width: 100%
   margin: 0 auto
+  color: black
      
   section
     width: 850px
@@ -14,28 +15,38 @@
 
     .skills-row
       display: flex
-      box-shadow: 0 1px 0 0px white
+      box-shadow: 0 1px 0 0px black
+
+      .skills-item:nth-child(1)
+        margin-left: 20px
+
+      .caption1:nth-child(1)
+        margin-left: 20px
 
       .skills-item
-        margin: 21px 0px
+        margin-top: 21px
+        margin-bottom: 21px
+        margin-left: 10px
+        font-size: 18px
         padding: 0 5px
         width: inherit
-        border-right: 2px solid rgba(255,255,255,.3)
         cursor: default
 
         a
-          color: white
+          color: black
           padding: 10px
-          text-decoration: underline
+          //text-decoration: underline
 
         a:hover
-          color: black
+          text-decoration: none
+          color: lighten(black, 30%)
 
       header
+        border-right: 1px solid black
         width: 180px
         font-weight: bold
-        font-size: 18px
-        margin: 2px 0
+        font-size: 20px
+        margin: 3px 0
 
         span
           font-size: 33px
@@ -52,7 +63,8 @@
       font-size: 22px
       padding: 10px 0
       margin: 25px 0
-      border-bottom: 1px solid white
+      font-weight: bold
+      border-bottom: 1px solid black
 
     div
       font-family: Raleway
@@ -61,7 +73,8 @@
       flex-direction: row
       margin: auto 10px
       padding: 10px
-      background-color: rgba(0,0,0, .1)
+      color: black
+      background-color: rgba(255,255,255, .4)
       //list-style-type: circle
 
 .caption1
@@ -72,16 +85,24 @@
 
 .caption1:hover .hide
   opacity: 1
+  z-index: 1
 
 .hide
-  color: white
+  font-family: Raleway
+  z-index: -1
+  //color: white
   opacity: 0
   position: absolute
   width: 200px
   line-height: 2em
   text-align: center
-  background-color: #333
+  background-color: rgba(255,255,255,.9)
   transition: opacity 0.2s ease
+  box-shadow: 0 0 2px 0 rgba(255,255,255,.99)
+
+  h5
+    a
+      color: white
 
 .show
   display: block
