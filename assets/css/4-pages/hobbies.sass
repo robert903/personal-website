@@ -1,27 +1,27 @@
 
 .hero-third
   
-  main
+  .hobbies-main
     display: flex
     width: 100%
     justify-content: center
     flex-wrap: wrap
 
-    section
+    article
       width: 300px
       color: black
       margin: 0 15px
-      padding-top: 10px
       transition: all 0.1s ease
+      box-shadow: 0px 0px 1px 0px black
       
       div
         background-color: black
 
-      article
+      h5
         margin: 20px 15px
         font-family: Raleway
 
-      box
+      .box
         display: flex
         justify-content: center
         align-items: center
@@ -34,8 +34,15 @@
           font-size: 60px
           text-shadow: 1px 1px rgba(255,255,255,.6)
           cursor: default
+          text-decoration: none
 
-          
+.hobbies-ps
+  text-align:center
+  width: 100%
+  display: block
+  opacity: .7
+  position: relative
+  top: 70px          
 
 
       
@@ -56,14 +63,15 @@
 
 .hero-third
   
-  main
+  .hobbies-main
 
-    section:hover
-      box-shadow: 0px 0px 0px 2px black
+    article:hover
+      padding-top: 10px
+      box-shadow: 0px 0px 5px 2px black
 
-      box > span
+      .box > span
         text-shadow: 1px 1px rgba(255,255,255,.99)
         font-weight: bold
 
-      box
+      .box
         opacity: .85

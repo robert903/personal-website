@@ -1,4 +1,4 @@
-main 
+.skills-main
   height: 100%
   width: 100%
   margin: 0 auto
@@ -9,20 +9,19 @@ main
     margin: 0 auto
     margin-top: 60px
       
-    ul:nth-child(4)
+    .skills-row:nth-child(4)
       box-shadow: none
 
-    ul
+    .skills-row
       display: flex
       box-shadow: 0 1px 0 0px white
 
-      li
+      .skills-item
         margin: 21px 0px
         padding: 0 5px
         width: inherit
         border-right: 2px solid rgba(255,255,255,.3)
         cursor: default
-        
 
         a
           color: white
@@ -41,7 +40,7 @@ main
         span
           font-size: 33px
 
-  article:nth-child(4)
+  .dev-stuff
     width: 850px
     height: inherit
     margin: 0 auto
@@ -75,6 +74,7 @@ main
   opacity: 1
 
 .hide
+  color: white
   opacity: 0
   position: absolute
   width: 200px
@@ -103,7 +103,7 @@ main
   .caption1
     text-decoration: none
 
-  main
+  .skills-main
     width: 60%
 
     section
@@ -112,10 +112,10 @@ main
       margin: 0 auto
       padding: 0
 
-      ul:nth-child(4)
+      .skills-row:nth-child(4)
         border-bottom: 1px solid white
 
-      ul
+      .skills-row
         display: flex
         flex-wrap: wrap
         flex-direction: column
@@ -132,7 +132,7 @@ main
           span
             margin-right: 20px
 
-        li
+        .skills-item
           list-style-type: circle
           font-size: 20px
           margin: 0
@@ -143,7 +143,7 @@ main
           a
             text-decoration: none
 
-    article:nth-child(4)
+    .dev-stuff
       width: 100%
       
       div
@@ -159,11 +159,11 @@ main
     line-height: 1em
 
 @media screen and (min-width: 450px) and (max-width: 700px)
-  main
+  .skills-main
     width: 90%
 
 @media screen and (max-width: 450px)
-  main
+  .skills-main
     width: 95%
 
 

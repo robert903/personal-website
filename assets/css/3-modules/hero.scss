@@ -5,6 +5,7 @@
   $hero-color: white;
   $hero-image: 'http://i.imgur.com/K3bTAsg.jpg';
   opacity: .95;
+  font-family: Raleway;
 
   @include background(url($hero-image));
   background-color: #324766;
@@ -13,7 +14,7 @@
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 5.5em;
-
+  
 
   .hero-inner {
     @include outer-container;
@@ -48,13 +49,18 @@
         }
       }
 
-      article {
+      h2 {
+        color: white;
         font-family: Raleway;
         background-color: rgba(0,0,0,0.5);
         font-weight: 300;
         font-size: 0.9em;
         line-height: 2em;
         margin: 0 auto 3em auto; 
+
+        span{
+          text-decoration: underline;
+        }
 
         @include media($large-screen) {
           font-size: 1.1em;
