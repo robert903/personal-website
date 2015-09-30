@@ -127,14 +127,15 @@
   .skills-main
     width: 60%
 
+    .page-header
+      span
+        font-size: 35px
+
     section
       width: 100%
       display: block
       margin: 0 auto
       padding: 0
-
-      .skills-row:nth-child(4)
-        border-bottom: 1px solid white
 
       .skills-row
         display: flex
@@ -142,20 +143,27 @@
         flex-direction: column
         margin: 0
         padding: 0
+        box-shadow: none
         
         header
+          border-right: none
           margin-top: 40px
           padding-bottom: 10px
           width: 100%
-          font-size: 25px
+          font-size: 30px
           //border-bottom: 1px solid white
 
           span
+            text-decoration: none
             margin-right: 20px
 
         .skills-item
           list-style-type: circle
-          font-size: 20px
+          position: relative
+          left: -30px
+          font-weight: bold
+          text-align: center
+          font-size: 22px
           margin: 0
           border: none
           margin-left: 20px
@@ -173,7 +181,11 @@
 
   .hide
     opacity: 1
+    width: 50px
+    text-align: center
+    box-shadow: none
     width: inherit
+    font-weight: 400
     height: inherit
     background-color: rgba(0,0,0,.00001)
     position: relative
@@ -187,4 +199,6 @@
   .skills-main
     width: 95%
 
-
+@media screen and (min-width: 900px)
+  .hide-js
+    padding: 13px
