@@ -1,6 +1,7 @@
  $(document).ready(function() {
 
   var parPosition = [];
+  
         $('.par').each(function() {
             parPosition.push($(this).offset().top);
         });
