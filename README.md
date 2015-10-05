@@ -1,5 +1,2 @@
-
-# responsive personal website
-
-#My personal website
+#This is My personal website
 Hosted Here - http://maxslob.website
