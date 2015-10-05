@@ -13,6 +13,10 @@ body
 	line-height: 2em
 	margin: 0
 	//margin-top: 70px
+	background-image: url("/bg.svg")
+	background-attachment: fixed
+	background-repeat: no-repeat
+	background-size: cover
 
 header
 	position: relative
@@ -20,7 +24,7 @@ header
 	width: 100%
 	height: 70px
 	background-color: white
-	border-bottom: 2px solid #333
+	//border-bottom: 2px solid #333
 	display: inline-block
 	
 	.logo
@@ -76,9 +80,9 @@ header
 			right: 0px
 			top: 68px
 			width: 25%
-			border: 2px solid black
-			border-top: 2px solid white
-			border-right: 2px solid white
+			//border: 2px solid black
+			//border-top: 2px solid white
+			//border-right: 2px solid white
 			background-color: #FFF
 
 			span
@@ -113,21 +117,23 @@ main
 			margin: 20px 20px
 			max-width: 30%
 			word-wrap: break-word
+			background-color: rgba(white, .9)
+			border-radius: 3px
 
 			.n-title
 				
 				h2
 					margin-left: 10px
-					margin-right: 0px
+					margin-right: 10px
 					padding: 0 25px
-					border-bottom: 3px solid red + 70
+					border-bottom: 3px solid black
 
 					.trash
 						visibility: hidden
 						float: right
 						position: relative
-						right: -15px
-						top: -15px
+						right: -20px
+						top: 5px
 						cursor: pointer
 						opacity: .5
 
@@ -144,21 +150,109 @@ main
 
 				blockquote
 
+footer
+	position: absolute
+	bottom: 20px
+	right: 20px
+	
+	.info-but
+		font-size: 40px
+		color: white
+
+		&:hover
+			color: black
+			cursor: pointer
+
+	.info
+		background-color: rgba(white, .9)
+		padding: 1px 15px
+		display: none
+
+		.list-container
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+
+			ul
+				margin: 15px 20px
+
+				li 
+					list-style-type: circle
+
+			ul:nth-child(1)
+				padding-right: 75px
+				margin-left: 0
+
+
+		hr
+			width: 15%
+
+		.info-close-but
+			float: right
+			position: relative
+			top: 10px
+			font-size: 30px
+			opacity: .6
+
+			&:hover
+				opacity: .9
+				cursor: pointer
+
+
+
 @media screen and (max-width: 900px)
 	header
 		.control
 			.add-block
 				width: 50%
 
-main
-	.container
-		width: 90%
+	main
+		.container
+			width: 90%
 
-		.note
-			max-width: 50%
+			.note
+				max-width: 50%
 
-			.n-text
-				width: 95%
+				.n-text
+					width: 95%
+
+	footer
+		position: relative
+		margin: 0
+		padding: 0
+
+		.info-but
+			float: right
+
+		.info
+			position: absolute
+			top: 25px
+			right: 25px
+			max-width: 80%
+
+
+		.list-container
+			display: block
+
+			.second-list
+				padding-right: 75px
+				margin-left: 0
+				position: relative
+				left: -30px
+
+			ul
+				padding-right: 0px
+				margin-left: 0
+
+				li 
+					list-style-type: circle
+
+			
+
+
+		hr
+			width: 15%
 
 
 @media screen and (max-width: 500px)
@@ -167,12 +261,12 @@ main
 			.add-block
 				width: 70%
 
-main
-	.container
-		width: 95%
+	main
+		.container
+			width: 95%
 
-		.note
-			max-width: 90%
+			.note
+				max-width: 90%
 
-			.n-text
-				width: 95%
+				.n-text
+					width: 95%

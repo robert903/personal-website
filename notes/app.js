@@ -8,11 +8,11 @@
     this.isDeleted = false;
     this.notes = [
       {
-        name: "First name",
-        body: "First body"
+        name: "Example one",
+        body: "Example body"
       }, {
-        name: "Second name",
-        body: "Second body"
+        name: "Example two",
+        body: "Example body"
       }
     ];
     this.noteCount = this.notes.length;
@@ -28,6 +28,14 @@
     });
     $('.add-button').click(function() {
       $('.add').toggleClass('rotate');
+    });
+    $('.info-but').click(function() {
+      $('.info').show();
+      $(this).hide();
+    });
+    $('.info-close-but').click(function() {
+      $('.info').hide();
+      $('.info-but').show();
     });
   });
 

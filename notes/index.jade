@@ -29,6 +29,27 @@ html(ng-app="notes")
                                 i.ion-trash-b(ng-click="isDeleted = !isDeleted")
                     .n-text
                         blockquote {{note.body}}
+
+        footer
+            i.ion-information-circled.info-but
+            .info
+                i.ion-close.info-close-but
+                h3 About That App
+                blockquote Using this app you can add some notes and delete them.<br> Reload page - notes gone.
+                hr
+                h4 What did I use when creating this app?
+                .list-container
+                    ul.first-list
+                        li Jade for HTML
+                        li Sass for CSS
+                        li Coffee for JS
+                        li Angular.js for logic
+
+                    ul.second-list
+                        li Sublime Text
+                        li Chrome
+                        li Prepros
+                        li Git
                 
         script(type="application/javascript", src="https://code.jquery.com/jquery-2.1.4.min.js")
         script(type="application/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")

@@ -3,12 +3,12 @@ app.controller('mainCtrl' , () ->
 	this.isClicked = true
 	this.isDeleted = false
 	this.notes = [{
-		name: "First name"
-		body: "First body"
+		name: "Example one"
+		body: "Example body"
 	},
 	{
-		name: "Second name"
-		body: "Second body"
+		name: "Example two"
+		body: "Example body"
 	}]
 	this.noteCount = this.notes.length
 	this.addNote = ->
@@ -24,6 +24,16 @@ $(document).ready(() ->
 		)
 	$('.add-button').click(() ->
 		$('.add').toggleClass('rotate')
+		return
+		)
+	$('.info-but').click(() ->
+		$('.info').show()
+		$(this).hide()
+		return
+		)
+	$('.info-close-but').click(() ->
+		$('.info').hide()
+		$('.info-but').show()
 		return
 		)
 	return
