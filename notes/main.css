@@ -1,0 +1,190 @@
+@import url(normalize.css);
+* {
+  box-sizing: border-box;
+  font-family: Comfortaa;
+  transition: all 0.1s linear;
+}
+
+body {
+  width: 100%;
+  line-height: 2em;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+}
+
+header .logo {
+  float: left;
+  width: 100px;
+  height: 70px;
+  display: inline-block;
+  z-index: 999999999;
+}
+
+header .logo img {
+  display: inline-block;
+  margin: 10px auto;
+  height: 50px;
+  z-index: 9999999999;
+}
+
+header .logo img:hover {
+  -webkit-filter: contrast(300%);
+}
+
+header .title {
+  display: block;
+  height: 70px;
+  vertical-align: middle;
+  width: calc(100% - 180px);
+  margin: 0 auto;
+  float: left;
+  text-align: center;
+  cursor: default;
+}
+
+header .control {
+  display: inline-block;
+  float: right;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .control .rotate {
+  transform: rotate(45deg);
+  color: #00a1ff;
+}
+
+header .control i {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+header .control i:hover {
+  color: #00a1ff;
+  cursor: pointer;
+}
+
+header .control .add-block {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0px;
+  top: 68px;
+  width: 25%;
+  border: 2px solid black;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  background-color: #FFF;
+}
+
+header .control .add-block span {
+  width: 80%;
+  margin: 0 auto;
+  cursor: default;
+}
+
+header .control .add-block input, header .control .add-block textarea {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .control .add-block .add-button {
+  margin-left: 60%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+main .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .container .note:hover {
+  box-shadow: 0 0 2px 2px black;
+}
+
+main .container .note {
+  margin: 20px 20px;
+  max-width: 30%;
+  word-wrap: break-word;
+}
+
+main .container .note .n-title h2 {
+  margin-left: 10px;
+  margin-right: 0px;
+  padding: 0 25px;
+  border-bottom: 3px solid #ff4646;
+}
+
+main .container .note .n-title h2 .trash {
+  visibility: hidden;
+  float: right;
+  position: relative;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+main .container .note .n-title h2 .trash:hover {
+  opacity: 1;
+}
+
+main .container .note .n-title h2:hover .trash {
+  visibility: visible;
+}
+
+main .container .note .n-text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  header .control .add-block {
+    width: 50%;
+  }
+}
+
+main .container {
+  width: 90%;
+}
+
+main .container .note {
+  max-width: 50%;
+}
+
+main .container .note .n-text {
+  width: 95%;
+}
+
+@media screen and (max-width: 500px) {
+  header .control .add-block {
+    width: 70%;
+  }
+}
+
+main .container {
+  width: 95%;
+}
+
+main .container .note {
+  max-width: 90%;
+}
+
+main .container .note .n-text {
+  width: 95%;
+}

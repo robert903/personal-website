@@ -1,0 +1,42 @@
+
+<html ng-app="notes">
+  <head>
+    <title>Notes App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+  </head>
+  <body ng-controller="mainCtrl as m">
+    <header>
+      <div class="logo"><a href="/"><img src="logo-n.png" alt=""/></a></div>
+      <div class="title"> 
+        <h3>maxslob notes</h3>
+      </div>
+      <div class="control"><i ng-click="m.isClicked = !m.isClicked;" class="ion-android-add-circle add"></i>
+        <form name="noteForm" ng-hide="m.isClicked" ng-submit="m.addNote(note)" size="2" class="add-block"><span>Name:</span>
+          <input type="text" ng-model="m.note.name" required="required"/><span>Body:</span>
+          <textarea type="text" ng-model="m.note.body" required="required"></textarea>
+          <button type="submit" value="Submit" ng-click="m.isClicked = !m.isClicked;" class="add-button">add</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div ng-repeat="note in m.notes" ng-hide="isDeleted" class="note">
+          <div class="n-title">
+            <h2>{{note.name}}
+              <div class="trash"><i ng-click="isDeleted = !isDeleted" class="ion-trash-b"></i></div>
+            </h2>
+          </div>
+          <div class="n-text">
+            <blockquote>{{note.body}}</blockquote>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+  </body>
+</html>
