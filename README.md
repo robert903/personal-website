@@ -1,9 +1,9 @@
-#This is My personal website
-## There are:
+## This is My personal website
+### What is inside?
 - Info about me
 - Knowledge
 - Hobbies
 - Projects
 - Contact & Info
 
-### Hosted Here - http://maxslob.website
+#### Hosted Here - http://maxslob.website
