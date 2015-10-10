@@ -6,4 +6,4 @@
 - Projects
 - Contact & Info
 
-##### Hosted Here - http://maxslob.website
+##### Hosted There - http://maxslob.website
