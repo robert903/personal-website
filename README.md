@@ -1,4 +1,4 @@
-### This is My personal website
+### This is the repository of my portfolio website.
 #### What is inside?
 - Info about me
 - Knowledge
