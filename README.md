@@ -1,5 +1,5 @@
 ### This is the repository of my portfolio website.
-#### What is on?
+#### What's on?
 - Info about me
 - Knowledge
 - Hobbies
