@@ -8,11 +8,8 @@
     this.isDeleted = false;
     this.notes = [
       {
-        name: "Example one",
-        body: "Example body"
-      }, {
-        name: "Example two",
-        body: "Example body"
+        name: "Example title",
+        body: "Example body. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate, soluta deserunt illum eaque quaerat? Aliquid assumenda, sit placeat.Lorem ipsum dolor sit."
       }
     ];
     this.noteCount = this.notes.length;
@@ -22,12 +19,16 @@
     };
   });
 
+  app.directive('notes', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'notes.html'
+    };
+  });
+
   $(document).ready(function() {
     $('.add').click(function() {
       $(this).toggleClass('rotate');
-    });
-    $('.add-button').click(function() {
-      $('.add').toggleClass('rotate');
     });
     $('.info-but').click(function() {
       $('.info').show();

@@ -4,7 +4,7 @@
     background-color: rgba(255,255,255, .85)
     width: 80%
     margin: 0 auto
-    height: 500px
+    height: 530px
 
     .left
       float: left
@@ -76,8 +76,7 @@
   color: white
 
 .btn-s
-  background-color: hsla(200, 100%, 50%, .7)
-  width: 60%
+  @extend .btn
 
 .contact-head
   font-weight: bold
@@ -97,3 +96,197 @@
     padding: 0px 0 0px 0
     top: 10px
     margin-bottom: 60px
+
+
+@media screen and (min-width: 930px) and (max-width: 1350px)
+  .contact
+
+    .contact-container
+      background-color: rgba(255,255,255, .85)
+      width: 90%
+      margin: 0 auto
+      height: 500px
+
+      .left
+        float: left
+        border-right: 1px solid #333
+
+        .field
+
+          ol
+            list-style-position: inside
+            list-style-type: decimal
+
+      .right
+        float: right
+        border-left: 1px solid #333
+
+        
+
+      h3
+        font-family: Raleway
+        text-align: center
+        margin-top: 15px
+        padding-bottom: 15px
+        box-shadow: 0 2px 0 0 #333
+
+      .bottom
+        float: right
+        width: 100%
+        text-align: center
+        background-color: hsl(350, 100%, 60%)
+        height: 25px
+
+        span
+          color: white
+
+      .left, .right
+        width: 50%
+        height: inherit
+        transition: background-color 0.18s ease-in-out
+
+      .left:hover, .right:hover
+        background-color: rgba(255,255,255, .5)
+
+  .msg
+    width: 90%
+    margin: 0 auto
+    color: black
+    text-decoration: none
+    font-weight: bold
+
+@media screen and (min-width: 870px) and (max-width: 930px)
+  .contact
+
+    .contact-container
+      background-color: rgba(255,255,255, .85)
+      width: 95%
+      margin: 0 auto
+      height: 500px
+
+      .left
+        float: left
+        border-right: 1px solid #333
+
+        .field
+
+          ol
+            list-style-position: inside
+            list-style-type: decimal
+
+      .right
+        float: right
+        border-left: 1px solid #333
+
+        
+
+      h3
+        font-family: Raleway
+        text-align: center
+        margin-top: 15px
+        padding-bottom: 15px
+        box-shadow: 0 2px 0 0 #333
+
+      .bottom
+        float: right
+        width: 100%
+        text-align: center
+        background-color: hsl(350, 100%, 60%)
+        height: 25px
+
+        span
+          color: white
+
+      .left, .right
+        width: 50%
+        height: inherit
+        transition: background-color 0.18s ease-in-out
+
+      .left:hover, .right:hover
+        background-color: rgba(255,255,255, .5)
+
+  .msg
+    width: 90%
+    margin: 0 auto
+    color: black
+    text-decoration: none
+    font-weight: bold
+
+@media screen and (max-width: 870px)
+  .contact
+
+    .contact-container
+      background-color: transparent
+      width: 95%
+      margin: 0 auto
+      height: 500px
+
+      .left
+        width: 90%
+        margin: 0 auto
+        background-color: rgba(255,255,255, .85)
+        float: none
+        border-right: none
+        height: 570px
+
+        &:hover
+          background-color: rgba(255,255,255, .85)
+
+      .right
+        margin: 0px auto
+        margin-top: 60px
+        width: 90%
+        background-color: rgba(255,255,255, .85)
+        float: none
+        border-left: none
+        padding-bottom: 0px
+        height: 550px
+        
+        &:hover
+          background-color: rgba(255,255,255, .85)
+
+      h3
+        margin-top: 15px
+        padding-top: 15px
+
+  .contact
+    padding-bottom: 43em
+
+  .bottom
+    display: none
+
+
+@media screen and (min-width: 630px) and (max-width: 870px)
+
+  .contact-container
+
+    .left
+      height: 570px
+
+    .right
+      height: 550px
+
+
+@media screen and (max-width: 630px)
+  .contact
+    padding-bottom: 52em
+      
+    .contact-container
+
+      .left
+        height: 620px
+
+      .right
+        height: 650px
+
+@media screen and (max-width: 470px)
+  .contact
+    padding-bottom: 60em
+      
+    .contact-container
+
+      .left
+        height: 670px
+
+      .right
+        height: 700px

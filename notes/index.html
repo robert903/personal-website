@@ -9,29 +9,22 @@
   </head>
   <body ng-controller="mainCtrl as m">
     <header>
-      <div class="logo"><a href="/"><img src="logo-n.png" alt=""/></a></div>
+      <div class="logo"><a href="http://maxslob.website"><img src="logo.svg" alt=""/></a></div>
       <div class="title"> 
-        <h3>maxslob notes</h3>
+        <h3>notes</h3>
       </div>
       <div class="control"><i ng-click="m.isClicked = !m.isClicked;" class="ion-android-add-circle add"></i>
-        <form name="noteForm" ng-hide="m.isClicked" ng-submit="m.addNote(note)" size="2" class="add-block"><span>Name:</span>
+        <form name="noteForm" ng-hide="m.isClicked" ng-submit="noteForm.$valid &amp;&amp; m.addNote(note)" class="add-block"><span>Name:</span>
           <input type="text" ng-model="m.note.name" required="required"/><span>Body:</span>
           <textarea type="text" ng-model="m.note.body" required="required"></textarea>
-          <button type="submit" value="Submit" ng-click="m.isClicked = !m.isClicked;" class="add-button">add</button>
+          <button type="submit" value="Submit" class="add-button">add</button>
         </form>
       </div>
     </header>
     <main>
       <div class="container">
         <div ng-repeat="note in m.notes" ng-hide="isDeleted" class="note">
-          <div class="n-title">
-            <h2>{{note.name}}
-              <div class="trash"><i ng-click="isDeleted = !isDeleted" class="ion-trash-b"></i></div>
-            </h2>
-          </div>
-          <div class="n-text">
-            <blockquote>{{note.body}}</blockquote>
-          </div>
+          <notes></notes>
         </div>
       </div>
     </main>
@@ -52,9 +45,10 @@
             <li>Sublime Text</li>
             <li>Chrome</li>
             <li>Prepros</li>
-            <li>Git</li>
+            <li>Git <a href="https://github.com/maxslob/personal-website/tree/master/notes" target="_blank" class="link">(Code <i class="ion-social-github">)</i></a></li>
           </ul>
         </div>
+        <h5 class="notice">It just took 2 days to build this website from 0 to that state.</h5>
       </div>
     </footer>
     <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

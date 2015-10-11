@@ -1,4 +1,4 @@
-var app = angular.module('TimeTable', []);
+﻿var app = angular.module('TimeTable', []);
 
 var d = new Date();
 
@@ -9,22 +9,22 @@ app.controller('MainCtrl', function(){
   };
   
   var none = '- - -';
-  var security = 'Security';
-  var testing = 'Testing';
-  var autotesting = 'Q.A. Testing';
-  var economy = 'Economy';
-  var internet = 'Internet';
-  var mathmod = 'MathMod';
-  var PE = 'P.E.';
-  var program = 'KP & PL';
-  var eng = 'English';
-  
+  var security = 'Безопасность';
+  var testing = 'Тестирование';
+  var autotesting = 'А. Тестирование';
+  var economy = 'Экономика';
+  var internet = 'Интернет';
+  var mathmod = 'Мат. Мод.';
+  var PE = 'Физ-ра';
+  var program = 'КП и ЯП';
+  var eng = 'Англ. Яз.';
+
   this.lessonsS = [
      {one: none,
         two: none,
           three: security + ' | 302',
-            four: testing + ' | 323',
-              five: autotesting + ' | 323'},
+            four: testing + ' | 325',
+              five: autotesting + ' | 325',},
      {one: none,
         two: none,
           three: mathmod + ' | 320',
@@ -55,8 +55,8 @@ app.controller('MainCtrl', function(){
      {one: none,
         two: none,
           three: none,
-            four: testing + ' | 323',
-              five: autotesting + ' | 323'},
+            four: testing + ' | 325',
+              five: autotesting + ' | 325'},
      {one: none,
         two: none,
           three: economy + ' | 125',
@@ -85,26 +85,25 @@ app.controller('MainCtrl', function(){
   ];
 });
 
-
 $(document).ready(function(){
   switch(d.getDay()){
     case 1: 
-      $('#week:nth-child(1)').addClass('today');
-        break;
-    case 2: 
       $('#week:nth-child(2)').addClass('today');
         break;
-    case 3: 
+    case 2: 
       $('#week:nth-child(3)').addClass('today');
         break;
-    case 4: 
+    case 3: 
       $('#week:nth-child(4)').addClass('today');
         break;
-    case 5: 
+    case 4: 
       $('#week:nth-child(5)').addClass('today');
         break;
-    case 6: 
+    case 5: 
       $('#week:nth-child(6)').addClass('today');
+        break;
+    case 6: 
+      $('#week:nth-child(7)').addClass('today');
         break;
   }
   
@@ -122,7 +121,7 @@ $(document).ready(function(){
       $('.p2').addClass('today');
         break;
     case 12: 
-      $(',p3').addClass('today');
+      $('.p3').addClass('today');
         break;
     case 13: 
       $('.p3').addClass('today');

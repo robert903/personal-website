@@ -9,7 +9,7 @@ body {
   width: 100%;
   line-height: 2em;
   margin: 0;
-  background-image: url("/bg.svg");
+  background-image: url("bg.svg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,6 +129,7 @@ main .container .note .n-title h2 {
   margin-left: 10px;
   margin-right: 10px;
   padding: 0 25px;
+  padding-bottom: 5px;
   border-bottom: 3px solid black;
 }
 
@@ -157,8 +158,8 @@ main .container .note .n-text {
 
 footer {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
 }
 
 footer .info-but {
@@ -175,6 +176,10 @@ footer .info {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1px 15px;
   display: none;
+}
+
+footer .info:hover {
+  box-shadow: 0px 0px 2px 2px black;
 }
 
 footer .info .list-container {
@@ -233,9 +238,14 @@ footer .info .info-close-but:hover {
     padding: 0;
   }
   footer .info-but {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
     float: right;
+    color: rgba(0, 0, 0, 0.9);
   }
   footer .info {
+    box-shadow: none;
     position: absolute;
     top: 25px;
     right: 25px;
@@ -275,4 +285,18 @@ footer .info .info-close-but:hover {
   main .container .note .n-text {
     width: 95%;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: #00a1ff;
+}
+
+.link:hover, .link:active, .link:focus {
+  color: gray;
+}
+
+.notice {
+  text-align: center;
+  opacity: .7;
 }

@@ -3,13 +3,13 @@ app.controller('mainCtrl' , () ->
 	this.isClicked = true
 	this.isDeleted = false
 	this.notes = [{
-		name: "Example one"
-		body: "Example body"
-	},
-	{
-		name: "Example two"
-		body: "Example body"
-	}]
+		name: "Example title"
+		body: "Example body. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptate, soluta deserunt illum eaque quaerat? Aliquid assumenda, sit placeat.Lorem ipsum dolor sit."
+	}
+	# {	name: "Example two"
+	#	body: "Example body"
+	#}
+	]
 	this.noteCount = this.notes.length
 	this.addNote = ->
 		this.notes.push(this.note)
@@ -17,13 +17,16 @@ app.controller('mainCtrl' , () ->
 	return
 )
 
+app.directive('notes', () ->
+	return {
+		restrict: 'E',
+		templateUrl: 'notes.html'
+		}
+	)
+
 $(document).ready(() ->
 	$('.add').click(() ->
 		$(this).toggleClass('rotate')
-		return
-		)
-	$('.add-button').click(() ->
-		$('.add').toggleClass('rotate')
 		return
 		)
 	$('.info-but').click(() ->
