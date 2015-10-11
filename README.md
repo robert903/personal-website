@@ -1,6 +1,16 @@
-<<<<<<< HEAD
-# <h1 style="color: red">responsive personal website</h1>
-=======
-#My personal website
-Hosted Here - http://maxslob.website
->>>>>>> ace0ce24661d225e183ac1403f759242d026cffc
+### This is the repository of my [portfolio website](http://maxslob.website).
+#### What's on?
+- Info about me
+- Knowledge
+- Hobbies
+- Projects
+- Contact & Info
+
+This repository also contain the code for my projects, such as:
+- TimeTable 
+  - [Code](https://github.com/maxslob/personal-website/tree/master/timetable)
+  - [See](timetable.maxslob.website)
+- Notes 
+  - [Code](https://github.com/maxslob/personal-website/tree/master/notes)
+  - [See](notes.maxslob.website)
+
