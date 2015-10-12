@@ -109,16 +109,8 @@
 }
 
 .contact { 
-  $hero-image333: 'https://static.pexels.com/photos/3367/landmark-bridge-metal-architecture-large.jpg';
-  opacity: .95;
-
-  @include background(url($hero-image333));
-  background-color: #324766;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding-bottom: 5.5em;
+  //$hero-image333: 'https://static.pexels.com/photos/3367/landmark-bridge-metal-architecture-large.jpg';
+  
 }
 
 .hero-seven{
